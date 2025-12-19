@@ -1,0 +1,144 @@
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 10px;
+}
+@media only screen and (max-width:600px) {
+    :root {
+        font-size: 9px;
+    }
+}
+
+h1 {
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+}
+
+
+h2 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+}
+.h2 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+}
+h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+.h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+@media only screen and (max-width:600px) {
+    h1 {
+        font-size: 4.2rem;
+        line-height: 4.8rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h3 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .h2 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .h3 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+.p {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+
+.pLarge {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+b {
+    font-weight: 900;
+}
+
+.pSmall {
+    font-size: 1.6rem;
+}
+
+.pTiny {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding-left: 3px;
+    padding-top: 6px;
+}
+
+.buttonText {
+    font-weight: 500;
+}
+
+i {
+    font-style: italic;
+}
+
+.subtextWhite {
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.subtextBlack {
+    color: hsla(0, 0%, 0%, .75);
+}
+
+.black {
+    color: black;
+}
+
+.thin {
+    font-weight: 400;
+}
+
+.color {
+    color: var(--secondary-color);
+}
+
+.white {
+    color:var(--off-white);
+}
+
+.logoSmall {
+    line-height: 1.1rem;
+    font-size: 1.5rem;
+}

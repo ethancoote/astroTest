@@ -1,5 +1,9 @@
 ---
-
+import '../styles/reset.css';
+import '../styles/main.css';
+import '../styles/fonts.css';
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <html lang="en">
@@ -8,9 +12,471 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Web Developer | Ethan Coote</title>
+		<style>
+			@font-face {
+				font-display: swap;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 400;
+				src: url('/fonts/roboto-v50-latin-regular.woff2') format('woff2');
+			}
+			@font-face {
+				font-display: swap;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 700;
+				src: url('/fonts/roboto-v50-latin-700.woff2') format('woff2');
+			}
+    	</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+
+	<Header />
+
+	<!--HERO-->
+    <section class="normalSection hero">
+        <div class="container">
+            <div class="box hero">
+                <div class="box acrossTrue closer centerAlign tag dark shrink visCenter centerMobile">
+                    <img class="icon" src="images/googleLogo.webp" alt="checkmark icon">
+                    <div class="box closest">
+                        <div class="box closest acrossTrue">
+                            <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            <img class="iconTiny" src="images/star.svg" alt="star icon">
+                        </div>
+                        <p class="pTiny"><b>5</b> of <b>5 Stars</b></p>
+                    </div>
+                </div>
+                
+                <h1>Professional Websites<br><span class="color">For Service Businesses</span></h1>
+                <p class="subtextBlack">Cold calling, emailing, and Facebook <i>can</i> get you clients, but it's inconsistent and time consuming. Don’t waste time and money looking for leads. Let your customers come to you.</p>
+                <div class="box across close mobile8Gap">
+                    <a class="button main"><p class="buttonText">Get Started</p>
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
+                    </a>
+                    <a class="button secondary"><p class="buttonText">Learn More</p>
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
+                    </a>
+                </div>
+                <div class="box close centerMobile across">
+                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                        <p>Money-Back Guarantee</p>
+                    </div>
+                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                        <p>7-Day Delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box closer center">
+                
+                <img class="heroImage" id="heroImage3" src="images/woman-laptop.webp" alt="woman working on a laptop">
+                <picture>
+                    <source srcset="images/mobile/laptop.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <source srcset="images/laptop.webp" media="(min-width: 481px)">
+                    <img class="heroImage" id="heroImage2" src="images/laptop.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">
+                </picture>
+                <!--<img class="heroImage" id="heroImage2" src="images/laptop.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">-->
+                <img class="heroImage" id="heroImage1" src="images/man-in-shop.webp" alt="older man standing in a shop">
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!--Price-->
+    <section class="normalSection closeish">
+        <div class="gradientBG"></div>
+        <div class="container noPaddingBot">
+            <div class="box center"><h2 class="pSmall thin tag">Packages</h2></div>
+        </div>
+        <div class="container close center noPaddingTop" >    
+            <div class="box fill small center card outline">
+                <div class="box limit" >
+                    <div class="box">
+                        <h2 class="p thin color">High Converting Landing Page</h2>
+                        <p><b class="h2">CAD$599</b></p>
+
+                    </div>
+                    <div class="box close">
+                        <p><i>What's Included:</i></p>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
+                            <p>Conversion Focused Landing Page</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Technical SEO Setup</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Copywriting</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Branded With Your Logo, Colours, and Assets</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Linked to Your Social Media</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Custom Contact Form Connected to Your Email</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Stock Images Sourced from Free Libraries</p>
+                        </div>
+                    </div><br>
+                    
+                    <a class="button secondary fill"><p>Let's Get Started</p></a>
+                </div>
+            </div>
+            <div class="box fill small center card highlight">
+                <div class="box limit" >
+                    <div class="box">
+                        <h2 class="p thin color">Service Business Website Package</h2>
+                        <p><b class="h2">CAD$999</b></p>
+
+                    </div>
+                    <div class="box close">
+                        <p><i>What's Included:</i></p>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
+                            <p>5 Pages (Home, About, Services, Portfolio, Contact)</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>On Page & Technical SEO Setup</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Full Site Copywriting</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Branded With Your Logo, Colours, and Assets</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Linked to Your Social Media</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Custom Contact Form Connected to Your Email</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Stock Images Sourced from Free Libraries</p>
+                        </div>
+                    </div><br>
+                    
+                    <a class="button main fill"><p>Let's Get Started</p></a>
+                </div>
+                
+            </div> 
+            <div class="box fill small center card outline">
+                <div class="box limit" >
+                    <div class="box">
+                        <h2 class="p thin color">Don't Fit in a Box?</h2>
+                        <p><b class="h2">CAD$2999+</b></p>
+
+                    </div>
+                    <div class="box close">
+                        <p><i>What's Included:</i></p>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
+                            <p>Full Custom Website</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>On Page & Technical SEO Setup</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Full Site Copywriting</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Branded With Your Logo, Colours, and Assets</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Linked to Your Social Media</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Custom Contact Form Connected to Your Email</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Stock Images Sourced from Free Libraries</p>
+                        </div>
+                    </div><br>
+                    
+                    <a class="button secondary fill"><p>Get In Touch</p></a>
+                </div>
+                
+            </div> 
+        </div>
+    </section>
+
+    <!--Custom Code-->
+    <secion class="normalSection">
+        <div class="container mobileFlip">
+            <div class="box">
+                <picture>
+                    <source srcset="images/mobile/code.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <source srcset="images/code.webp" media="(min-width: 481px)">
+                    <img class="normalImg" src="images/code.webp" alt="VS Code folder making a website" loading="lazy">
+                </picture>
+            </div>
+            <div class="box">
+                <h3>Custom Coded Static Sites</h3>
+                <div class="box text">
+                    <p>Website builders and frameworks can make cool websites, but they come at a cost. That cost is performance.</p>
+                    <p>Fancy animations, and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have 3 things: simplicity, clarity, and really fast page speeds.</p>
+                    <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
+                </div>
+                
+            </div>
+        </div>  
+    </secion>
+
+    <!--SEO-->
+    <secion class="normalSection">
+        <div class="container">
+            
+            <div class="box">
+                <h3>Search Engine Optimization</h3>
+                <div class="box text">
+                    <p>There’s a lot of misleading information about Search Engine Optimization. I want to cut through the noise and focus on the things that actually matter.</p>
+                    <p>Your website will be a rock-solid foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. </p>
+                    <p>You need your website to be the bedrock of your SEO strategies. Give yourself the opportunity to scale without worry.</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <picture>
+                    <source srcset="images/mobile/seo-laptop.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <source srcset="images/seo-laptop.webp" media="(min-width: 481px)">
+                    <img class="normalImg" src="images/seo-laptop.webp" alt="google search webpage on laptop" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </secion>
+
+    <!--Performance-->
+    <secion class="normalSection">
+        <div class="container mobileFlip">
+            <div class="box">
+                <picture>
+                    <source srcset="images/mobile/pagespeed.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <source srcset="images/pagespeed.webp" media="(min-width: 481px)">
+                    <img class="normalImg" src="images/pagespeed.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                </picture>
+                
+            </div>
+            <div class="box">
+                <h3>Maximize Website Performance</h3>
+                <div class="box text">
+                    <p>Slow load times will lose you customers.</p>
+                    <p>A page that loads in 3 seconds immediately loses 8% of visitors. A page that loads in 5 seconds immediately loses 38% of visitors. </p>
+                    <p>You might not even realize there’s a problem, but you’ll be losing customers before they even see your site. <b>I guarantee an average desktop load time of 1 second or lower for your website.</b></p>
+                </div>
+                
+            </div>
+        </div>  
+    </secion> 
+
+    <!--ABOUT-->
+    <secion class="normalSection closeish " style="background-color: var(--off-gray);">
+        <div class="container apart">
+            
+            <div class="box closest">
+                <h3>Ethan Coote</h3>
+                <h4 class="p thin">Website Developer</h4><br><br>
+                <div class="box text">
+                    <p>Hey, my name's Ethan. I'm a Canadian web developer living in Guelph, Ontario.</p>
+                    <p>I build simple websites with a strong focus on performance and conversion optimization. I’ve been building websites as a hobby for years, and started my business as a freelancer in 2025. Feel free to reach out if you have any questions, or you’d like a custom quote.</p>
+                    <div class="box closest">
+                        <p class="pSmall"><b>Bachelor of Computing</b><br>Major in Computer Science | Minor in Business</p>
+                        <p class="pSmall">University of Guelph | 2019 - 2024</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="box limit400">
+                <picture>
+                    <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <source srcset="images/profile.webp" media="(min-width: 481px)">
+                    <img class="normalImg circle" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
+                </picture>
+                
+            </div>
+        </div>
+    </secion>
+
+    <!--Guarantees-->
+    <section class="normalSection closeish">
+        <div class="gradientBG"></div>
+        <div class="container noPaddingBot">
+            <div class="box center"><h3 class="pSmall thin tag">Guarantees</h3></div>
+        </div>
+        <div class="container down noPaddingTop">            
+            <div class="box across center top close">
+                <div class="box fill close center card stretch outline">
+                    <img class="icon" src="images/dollar.svg" alt="dollar icon" loading="lazy">
+                    <h4>Money Back Guarantee</h4>
+                    <p>If you don’t like your website you get a full refund. That’s how confident I am that you’ll love it.</p>
+                    <p>Big design agencies are risky and expensive. I make websites that normal businesses can afford, and it’s completely risk free.</p>
+                    <p><i>(Refunds must be requested prior to handoff)</i></p>
+                </div>
+                <div class="box fill close center card stretch outline">
+                    <img class="icon" src="images/bug.svg" alt="bug icon" loading="lazy">
+                    <h4>Bug Fix Guarantee</h4>
+                    <p>Most of the time the websites completely bug free, but sometimes mistakes happen. If you find any typos or bugs in your website within the first 6 months, I'll fix it for free.</p>
+                    <p>If you decide to use my hosting plan, you also get a lifetime bug fix guarantee.</p>
+                </div>
+                <div class="box fill close center card stretch outline">
+                    <img class="icon" src="images/lightning.svg" alt="lightning icon" loading="lazy">
+                    <h4>7-Day Turnaround Guarantee</h4>
+                    <p>Your business could be online this week. Big web design agencies will spend months building your website, going back and forth with round after round of revisions.</p>
+                    <p>By streamlining the development process, and including just 1 round of revisions, I can guarantee your website will be online within 7-days of your order.</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!--CTA-->
+    <section class="normalSection">
+        <div class="container">
+        <di class="box center">
+            <div class="box center limit">
+                <h2>Let Your Customers Find You Online</h2>
+                <p>Your business needs a professional website for potential clients to find you. 92% of customers will visit a local businesses’ website when deciding which business to use. Don’t get left behind.</p>
+                <a class="button main"><p>Let's Get Started</p></a>
+            </div>
+        </div>
+            
+    </section>
+
+    <!--CONTACT-->
+    <section class="normalSection close" style="background-color: var(--off-gray);">
+        <div class="container lightPaddingBot">
+            <div class="box center"><h2 class="pSmall thin tag darkBack ">Packages</h2></div>
+        </div>
+        <div class="container noPaddingTop">
+            <div class="box">
+                <h3>Get Your Free Quote Today</h3>
+                <form class="box close">
+                    <div class="box across close">
+                        <div class="box closest">
+                            <label for="name"><p>Name *</p></label>
+                            <input class="inputBox" type="text" name="name" id="name" placeholder="John Smith" required>
+                        </div>
+                        <div class="box closest">
+                            <label for="email"><p>Email *</p></label>
+                            <input class="inputBox" type="email" name="email" id="email" placeholder="jsmith@example.com" required>
+                        </div>
+                    </div>
+                    <div class="box across close">
+                        <div class="box closest">
+                            <label for="phone"><p>Phone</p></label>
+                            <input class="inputBox" type="tel" name="phone" id="phone" placeholder="289-555-5555">
+                        </div>
+                        <div class="box closest">
+                            <label for="company"><p>Company Name</p></label>
+                            <input class="inputBox" type="text" name="company" id="company" placeholder="moneymakers inc.">
+                        </div>
+                    </div>
+                    <div class="box closest">
+                        <label for="message"><p>Message</p></label>
+                        <textarea class="inputBox textArea" rows="6" cols="64" name="message" id="message" placeholder="What would you like to say?" required></textarea>
+                    </div>
+                    
+                    <button class="button main fill"><p>Get a Quote</p></button>
+                </form>
+            </div>
+            <div class="box close">
+                <div class="box close centerMobile across apart endAlign">
+                    <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter centerMobile">
+                        <img class="icon" src="images/googleLogo.webp" alt="Google Logo">
+                        <div class="box closest">
+                            <div class="box closest acrossTrue">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            </div>
+                            <p class="pTiny"><b>5</b> of <b>5 Stars</b></p>
+                        </div>
+                    </div>
+                    <div class="box close centerMobile shrink endAlign">
+                        <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Bug Fix Guarantee</p>
+                        </div>
+                        <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Money-Back Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box fill card close outline lightPaddingBot">
+                    <h4>He was knowledgeable, helpful and efficient</h4>
+                    <p class="pSmall"><i>Ethan helped us to restructure and optimise our framer site to improve our SEO. He was knowledgeable, helpful and efficient. I'm sure we'll work together again.</i></p>
+                    <div class="box acrossTrue apart centerAlign close">
+                        <img class="icon" src="images/googleLogo.webp" alt="Google Logo">
+                        <div class="box closest shrink">
+                            <div class="box closest acrossTrue end">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            </div>
+                            <p><i>- Pete Sanderson</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box fill card close outline lightPaddingBot">
+                    <h4>I had an amazing experience</h4>
+                    <p class="pSmall"><i>From start to finish, he was professional, organized, and clear about every step of the process. I loved the progress tracker document he shared. It made it easy to see how the project was coming along and what was next in the plan.</i></p>
+                    <div class="box acrossTrue apart centerAlign close">
+                        <img class="icon" src="images/googleLogo.webp" alt="Google Logo">
+                        <div class="box closest shrink">
+                            <div class="box closest acrossTrue end">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon">
+                            </div>
+                            <p><i>- Cassandra</i></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+	<Footer />
 	</body>
 </html>
