@@ -1,7 +1,7 @@
 <header id="navDesktop">
     <nav class="navigationBar">
         <div class="logoDiv">
-            <a href="index.html"><img src="images/logo.svg" alt="company logo">
+            <a href="/#home"><img src="images/logo.svg" alt="company logo">
             <div class="box logo">
                 <p><b>Ethan Coote</b></p>
                 <p class="logoSmall subtextBlack">Web Developer</p>
@@ -11,14 +11,14 @@
         </div>
         
         <ul class="navigationMenu">
-            <li><a href="index.html"><p class="pSmall">Home</p></a></li>
-            <li><a href="about.html"><p class="pSmall">About</p></a></li>
-            <li><a href="services.html"><p class="pSmall">Services</p></a></li>
-            <li><a href="contact.html"><p class="pSmall">Contact</p></a></li>
+            <li><a href="/#home"><p class="pSmall">Home</p></a></li>
+            <li><a href="/#about"><p class="pSmall">About</p></a></li>
+            <li><a href="/#pricing"><p class="pSmall">Pricing</p></a></li>
+            <li><a href="/#contact"><p class="pSmall">Contact</p></a></li>
             <li><a href="portfolio.html"><p class="pSmall">Portfolio</p></a></li>
         </ul>
         <div class="navButton">
-            <a href="contact.html" class="button"><p class="buttonText">Let's Get Started</p></a>
+            <a href="/#contact" class="button"><p class="buttonText">Let's Get Started</p></a>
         </div>
         
     </nav>
@@ -28,7 +28,7 @@
 <header id="navMobile">
     <nav class="navigationBar">
         <div class="logoDiv">
-            <a href="index.html"><img src="images/logo.svg" alt="company logo">
+            <a href="/#home"><img src="images/logo.svg" alt="company logo">
             <div class="box logo">
                 <p>Ethan Coote</p>
                 <p class="logoSmall subtextBlack">Web Developer</p>
@@ -42,10 +42,10 @@
 <header>
     <div class="mobileMenu">
         <ul class="navigationMenu">
-            <li><a href="index.html"><p class="pLarge">Home</p></a></li>
-            <li><a href="about.html"><p class="pLarge" >About</p></a></li>
-            <li><a href="services.html"><p class="pLarge" >Services</p></a></li>
-            <li><a href="contact.html"><p class="pLarge">Contact</p></a></li>
+            <li><a href="/#home"><p class="pLarge">Home</p></a></li>
+            <li><a href="/#about"><p class="pLarge" >About</p></a></li>
+            <li><a href="/#pricing"><p class="pLarge" >Pricing</p></a></li>
+            <li><a href="/#contact"><p class="pLarge">Contact</p></a></li>
             <li><a href="portfolio.html"><p class="pLarge">Portfolio</p></a></li>
         </ul>
         <div class="navButton">
@@ -53,4 +53,14 @@
         </div>
     </div>
 </header>
+<style>
+    #hamburger {
+        background-image: url("/images/burger-bar.png"), url("/images/close.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 30px;
+        width: 24px;
+        height: 24px;
+    }
+</style>
 <script src="../scripts/nav.js"></script>

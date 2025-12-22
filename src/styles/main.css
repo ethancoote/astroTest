@@ -12,6 +12,10 @@
     --black-tint: hsla(0, 0%, 0%, .05);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*SECTIONS*/
 .normalSection {
     position: relative;
@@ -24,6 +28,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--off-white);
+    scroll-margin-top: 80px;
 }
 
 .normalSection.hero {
@@ -170,15 +175,6 @@
     padding: 0px 16px;
     box-shadow: none;
     
-}
-
-#hamburger {
-    background-image: url("../images/burger-bar.png"), url("../images/close.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center, center left 30px;
-    width: 24px;
-    height: 24px;
 }
 
 /*DIVS*/
@@ -335,7 +331,6 @@
 .tag.visCenter {
     padding: 4px 20px 4px 4px;
 }
-
 
 /*COMMANDS*/
 .box.across {
@@ -517,9 +512,6 @@
     background-color: var(--black-tint);
 }
 
-
-
-
 /*BUTTONS AND ANCHORS*/
 .button {
     display: flex;
@@ -585,7 +577,6 @@
     width: 100%;
 }
 
-
 /*IMGS*/
 .normalImg {
     width:100%;
@@ -593,6 +584,14 @@
     border-radius: var(--border-radius);
     box-shadow: 0px 5px 16px hsla(0, 0%, 0%, .1);
     border: solid 1px hsla(0,0%, 0%, .15);
+}
+
+.fourByThree {
+    aspect-ratio: 4/3;
+}
+
+.square {
+    aspect-ratio: 1/1;
 }
 
 .normalImg.circle {
@@ -650,7 +649,6 @@
         display:none;
     }
 }
-
 
 /*FORM*/
 .inputBox {

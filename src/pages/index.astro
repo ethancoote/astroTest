@@ -35,10 +35,10 @@ import Footer from "../components/footer.astro";
 	<Header />
 
 	<!--HERO-->
-    <section class="normalSection hero">
+    <section id="home" class="normalSection hero">
         <div class="container">
             <div class="box hero">
-                <div class="box acrossTrue closer centerAlign tag dark shrink visCenter centerMobile">
+                <div id="heroReviews" class="box acrossTrue closer centerAlign tag dark shrink visCenter centerMobile">
                     <img class="icon" src="images/googleLogo.webp" alt="checkmark icon">
                     <div class="box closest">
                         <div class="box closest acrossTrue">
@@ -52,9 +52,9 @@ import Footer from "../components/footer.astro";
                     </div>
                 </div>
                 
-                <h1>Professional Websites<br><span class="color">For Service Businesses</span></h1>
-                <p class="subtextBlack">Cold calling, emailing, and Facebook <i>can</i> get you clients, but it's inconsistent and time consuming. Don’t waste time and money looking for leads. Let your customers come to you.</p>
-                <div class="box across close mobile8Gap">
+                <h1 id="headline">Professional Websites<br><span class="color">For Service Businesses</span></h1>
+                <p id="subHeadline" class="subtextBlack">Cold calling, emailing, and Facebook <i>can</i> get you clients, but it's inconsistent and time consuming. Don’t waste time and money looking for leads. Let your customers come to you.</p>
+                <div id="heroButtons" class="box across close mobile8Gap">
                     <a class="button main"><p class="buttonText">Get Started</p>
                         <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
@@ -65,11 +65,11 @@ import Footer from "../components/footer.astro";
                     </a>
                 </div>
                 <div class="box close centerMobile across">
-                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                    <div id="tag2" class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                         <p>Money-Back Guarantee</p>
                     </div>
-                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                    <div id="tag1" class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                         <p>7-Day Delivery</p>
                     </div>
@@ -88,11 +88,34 @@ import Footer from "../components/footer.astro";
                 
             </div>
         </div>
-
+		<style>
+			@media only screen and (max-width: 900px){
+				#heroReviews {
+					order: 1;
+				}
+				#tag1 {
+					order: 2;
+				}
+				#tag2 {
+					order: 3;
+				}
+				#headline {
+					order: 4;
+				}
+				#subHeadline {
+					order: 5;
+				}
+				#heroButtons {
+					order: 6;
+				}
+				
+			}
+			
+		</style>
     </section>
-
+	
     <!--Price-->
-    <section class="normalSection closeish">
+    <section id="pricing" class="normalSection closeish">
         <div class="gradientBG"></div>
         <div class="container noPaddingBot">
             <div class="box center"><h2 class="pSmall thin tag">Packages</h2></div>
@@ -230,13 +253,13 @@ import Footer from "../components/footer.astro";
     </section>
 
     <!--Custom Code-->
-    <secion class="normalSection">
+    <section class="normalSection">
         <div class="container mobileFlip">
             <div class="box">
                 <picture>
                     <source srcset="images/mobile/code.webp" media="(min-width: 0px) and (max-width: 480px)">
                     <source srcset="images/code.webp" media="(min-width: 481px)">
-                    <img class="normalImg" src="images/code.webp" alt="VS Code folder making a website" loading="lazy">
+                    <img class="normalImg fourByThree" src="images/code.webp" alt="VS Code folder making a website" loading="lazy">
                 </picture>
             </div>
             <div class="box">
@@ -249,10 +272,10 @@ import Footer from "../components/footer.astro";
                 
             </div>
         </div>  
-    </secion>
+    </section>
 
     <!--SEO-->
-    <secion class="normalSection">
+    <section class="normalSection" style="background-color: var(--off-gray);">
         <div class="container">
             
             <div class="box">
@@ -268,20 +291,20 @@ import Footer from "../components/footer.astro";
                 <picture>
                     <source srcset="images/mobile/seo-laptop.webp" media="(min-width: 0px) and (max-width: 480px)">
                     <source srcset="images/seo-laptop.webp" media="(min-width: 481px)">
-                    <img class="normalImg" src="images/seo-laptop.webp" alt="google search webpage on laptop" loading="lazy">
+                    <img class="normalImg fourByThree" src="images/seo-laptop.webp" alt="google search webpage on laptop" loading="lazy">
                 </picture>
             </div>
         </div>
-    </secion>
+    </section>
 
     <!--Performance-->
-    <secion class="normalSection">
+    <section class="normalSection">
         <div class="container mobileFlip">
             <div class="box">
                 <picture>
                     <source srcset="images/mobile/pagespeed.webp" media="(min-width: 0px) and (max-width: 480px)">
                     <source srcset="images/pagespeed.webp" media="(min-width: 481px)">
-                    <img class="normalImg" src="images/pagespeed.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                    <img class="normalImg fourByThree" src="images/pagespeed.webp" alt="pagespeed insights high performing webpage" loading="lazy">
                 </picture>
                 
             </div>
@@ -295,10 +318,10 @@ import Footer from "../components/footer.astro";
                 
             </div>
         </div>  
-    </secion> 
+    </section> 
 
     <!--ABOUT-->
-    <secion class="normalSection closeish " style="background-color: var(--off-gray);">
+    <section id="about" class="normalSection closeish " style="background-color: var(--off-gray);" >
         <div class="container apart">
             
             <div class="box closest">
@@ -319,12 +342,12 @@ import Footer from "../components/footer.astro";
                 <picture>
                     <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
                     <source srcset="images/profile.webp" media="(min-width: 481px)">
-                    <img class="normalImg circle" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
+                    <img class="normalImg circle square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
                 </picture>
                 
             </div>
         </div>
-    </secion>
+    </section>
 
     <!--Guarantees-->
     <section class="normalSection closeish">
@@ -373,14 +396,14 @@ import Footer from "../components/footer.astro";
     </section>
 
     <!--CONTACT-->
-    <section class="normalSection close" style="background-color: var(--off-gray);">
+    <section id="contact" class="normalSection close" style="background-color: var(--off-gray);">
         <div class="container lightPaddingBot">
-            <div class="box center"><h2 class="pSmall thin tag darkBack ">Packages</h2></div>
+            <div class="box center"><h2 class="pSmall thin tag darkBack ">Contact</h2></div>
         </div>
         <div class="container noPaddingTop">
             <div class="box">
                 <h3>Get Your Free Quote Today</h3>
-                <form class="box close">
+                <form class="box close" action="https://formsubmit.co/ecootewebdev@gmail.com" method="POST">
                     <div class="box across close">
                         <div class="box closest">
                             <label for="name"><p>Name *</p></label>
