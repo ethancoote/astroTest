@@ -1,0 +1,51 @@
+---
+import '../styles/reset.css';
+import '../styles/main.css';
+import '../styles/fonts.css';
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Web Developer | Ethan Coote</title>
+		<style>
+			@font-face {
+				font-display: swap;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 400;
+				src: url('/fonts/roboto-v50-latin-regular.woff2') format('woff2');
+			}
+			@font-face {
+				font-display: swap;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 700;
+				src: url('/fonts/roboto-v50-latin-700.woff2') format('woff2');
+			}
+    	</style>
+	</head>
+	<body>
+
+	<Header />
+
+	<section class="normalSection" style="min-height: 100vh;">
+        <div class="container">
+        <di class="box center">
+            <div class="box center limit">
+                <img src="images/check.svg" alt="checkmark icon">
+                <h2>Thank You!</h2>
+                <p>Thank you for your submission. I'll get back to you as soon as possible.</p>
+                <a href="/" class="button main"><p>Return Home</p></a>
+            </div>
+        </div> 
+    </section>
+
+	<Footer />
+	</body>
+</html>

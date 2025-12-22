@@ -349,6 +349,72 @@ import Footer from "../components/footer.astro";
         </div>
     </section>
 
+	<!-- FAQ -->
+	<section class="normalSection closeish">
+		<div class="container noPaddingBot">
+            <div class="box center"><h2 class="pSmall thin tag darkBack">FAQs</h2></div>
+        </div>
+		<div class="container noPaddingTop noPaddingBot">
+			<div class="box center">
+				<h3 class="h2">Frequently Asked Questions</h3>
+			</div>
+		</div>
+		<div class="container noPaddingTop top">
+			<div class="box closer">
+				<details name="accordion1">
+					<summary class="box across apart">
+						<p class="pLarge">Question Number 1</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 1</p>
+					</div>
+				</details>
+				<details name="accordion1">
+					<summary class="box across apart">
+						<p class="pLarge">Question Number 2</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 2</p>
+					</div>
+				</details>
+				<details name="accordion1">
+					<summary class="box across apart">
+						<p class="pLarge">Question Number 3</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 3</p>
+					</div>
+				</details>
+			</div>
+			<div class="box closer">
+				<details name="accordion2">
+					<summary class="box across apart">
+						<p class="pLarge">Question Number 4</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 4</p>
+					</div>
+				</details>
+				<details name="accordion2">
+					<summary class="box across apart">
+						<p class="pLarge">Question Number 5</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 5</p>
+					</div>
+				</details>
+				<details name="accordion2">
+					<summary class="box across apart">
+						<p class="pLarge">Question Number 6</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 6</p>
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>
+	
     <!--Guarantees-->
     <section class="normalSection closeish">
         <div class="gradientBG"></div>
@@ -385,7 +451,7 @@ import Footer from "../components/footer.astro";
     <!--CTA-->
     <section class="normalSection">
         <div class="container">
-        <di class="box center">
+        <div class="box center">
             <div class="box center limit">
                 <h2>Let Your Customers Find You Online</h2>
                 <p>Your business needs a professional website for potential clients to find you. 92% of customers will visit a local businesses’ website when deciding which business to use. Don’t get left behind.</p>
@@ -403,7 +469,7 @@ import Footer from "../components/footer.astro";
         <div class="container noPaddingTop">
             <div class="box">
                 <h3>Get Your Free Quote Today</h3>
-                <form class="box close" action="https://formsubmit.co/ecootewebdev@gmail.com" method="POST">
+                <form class="box close" action="https://formsubmit.co/013156e829aadb58d778adcecfdb1fbd" method="POST">
                     <div class="box across close">
                         <div class="box closest">
                             <label for="name"><p>Name *</p></label>
@@ -428,8 +494,8 @@ import Footer from "../components/footer.astro";
                         <label for="message"><p>Message</p></label>
                         <textarea class="inputBox textArea" rows="6" cols="64" name="message" id="message" placeholder="What would you like to say?" required></textarea>
                     </div>
-                    
-                    <button class="button main fill"><p>Get a Quote</p></button>
+                    <!-- <input type="hidden" name="_next" value="localhost:4321/thank-you.html">-->
+                    <button type="submit" name="submit" class="button main fill"><p>Get a Quote</p></button>
                 </form>
             </div>
             <div class="box close">
@@ -492,10 +558,7 @@ import Footer from "../components/footer.astro";
                         </div>
                     </div>
                 </div>
-                
-                
-                
-                
+
             </div>
         </div>
     </section>

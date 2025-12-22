@@ -313,7 +313,7 @@ html {
 .divider {
     height: 1px;
     width: 100%;
-    background-color: black;
+    background-color: hsla(0, 0%, 0%, .5);
 }
 
 .tag {
@@ -734,3 +734,31 @@ html {
     }
 }
 
+/*ACCORDIAN*/
+summary {
+    user-select: none;
+    padding: 12px 0px;
+    list-style: none;
+}
+
+details {
+    border-bottom: solid 1px hsla(0, 0%, 0%, .1);
+}
+
+summary:hover {
+    
+    cursor: pointer;
+}
+
+summary::after {
+    font-size: 2.3rem;
+    content: "+";
+}
+
+details[open] summary::after {
+    content: "—";
+}
+
+.answer {
+    padding: 0px 0px 4px 0px;
+}
