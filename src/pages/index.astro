@@ -55,21 +55,21 @@ import Footer from "../components/footer.astro";
                 <h1 id="headline">Professional Websites<br><span class="color">For Service Businesses</span></h1>
                 <p id="subHeadline" class="subtextBlack">Cold calling, emailing, and Facebook <i>can</i> get you clients, but it's inconsistent and time consuming. Don’t waste time and money looking for leads. Let your customers come to you.</p>
                 <div id="heroButtons" class="box across close mobile8Gap">
-                    <a class="button main"><p class="buttonText">Get Started</p>
+                    <a href="#contact" class="button main"><p class="buttonText">Get Started</p>
                         <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
                     </a>
-                    <a class="button secondary"><p class="buttonText">Learn More</p>
+                    <a href="#mockup" class="button secondary"><p class="buttonText">Learn More</p>
                         <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
                     </a>
                 </div>
-                <div class="box close centerMobile across">
-                    <div id="tag2" class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                <div id="tagsDesktop" class="box close centerMobile across">
+                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                         <p>Money-Back Guarantee</p>
                     </div>
-                    <div id="tag1" class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                         <p>7-Day Delivery</p>
                     </div>
@@ -87,33 +87,121 @@ import Footer from "../components/footer.astro";
                 <img class="heroImage" id="heroImage1" src="images/man-in-shop.webp" alt="older man standing in a shop">
                 
             </div>
+            <div id="tagsMobile" class="box close centerMobile across">
+                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                        <p>Money-Back Guarantee</p>
+                    </div>
+                    <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                        <p>7-Day Delivery</p>
+                    </div>
+                </div>
         </div>
 		<style>
 			@media only screen and (max-width: 900px){
-				#heroReviews {
-					order: 1;
+				#tagsDesktop {
+					display: none;
 				}
-				#tag1 {
-					order: 2;
-				}
-				#tag2 {
-					order: 3;
-				}
-				#headline {
-					order: 4;
-				}
-				#subHeadline {
-					order: 5;
-				}
-				#heroButtons {
-					order: 6;
-				}
-				
+                #tagsMobile {
+                    display: flex;
+                }
 			}
+            @media only screen and (min-width: 901px) {
+                #tagsDesktop {
+					display: flex;
+				}
+                #tagsMobile {
+                    display: none;
+                }
+            }
 			
 		</style>
     </section>
 	
+    <!--Mockup -->
+    <section id="mockup" class="normalSection" style="background-color: var(--off-gray);">
+        <div class="container">
+            <div class="box">
+                <picture>
+                    <source srcset="images/mobile/mockup.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <img class="sixteenByNine" src="images/mockup.webp" alt="painter landing page mockup" loading="lazy">
+                </picture>
+            </div>
+            <div class="box">
+                <h3>Fast, Custom Coded Sites</h3>
+                <div class="box text">
+                    <p>Website builders and frameworks can make cool websites, but they come at a cost. That cost is performance.</p>
+                    <p>Fancy animations, and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have 3 things: simplicity, clarity, and really fast page speeds.</p>
+                    <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
+                </div>
+                
+            </div>
+        </div>  
+    </section>
+
+    <!--Custom Code
+    <section class="normalSection">
+        <div class="container ">
+            <div class="box">
+                <picture>
+                    <source srcset="images/mobile/code.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <source srcset="images/code.webp" media="(min-width: 481px)">
+                    <img class="normalImg fourByThree" src="images/code.webp" alt="VS Code folder making a website" loading="lazy">
+                </picture>
+            </div>
+            <div class="box">
+                <h3>Custom Coded Static Sites</h3>
+                <div class="box text">
+                    <p>Website builders and frameworks can make cool websites, but they come at a cost. That cost is performance.</p>
+                    <p>Fancy animations, and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have 3 things: simplicity, clarity, and really fast page speeds.</p>
+                    <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
+                </div>
+                
+            </div>
+        </div>  
+    </section>-->
+
+    <!--SEO-->
+    <section class="normalSection">
+        <div class="container mobileFlip">
+            
+            <div class="box">
+                <h3>Search Engine Optimization</h3>
+                <div class="box text">
+                    <p>There’s a lot of misleading information about Search Engine Optimization. I want to cut through the noise and focus on the things that actually matter.</p>
+                    <p>Your website will be a rock-solid foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. </p>
+                    <p>You need your website to be the bedrock of your SEO strategies. Give yourself the opportunity to scale without worry.</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <picture>
+                    <source srcset="images/mobile/ahrefs.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <img class="normalImg sixteenByNine" src="images/ahrefs.webp" alt="ahrefs seo dashboard" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!--Performance-->
+    <section class="normalSection" style="background-color: var(--off-gray);">
+        <div class="container">
+            <div class="box center">
+                <img class="square limit400 " src="images/100Performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+            </div>
+            <div class="box">
+                <h3>Maximize Website Performance</h3>
+                <div class="box text">
+                    <p>Slow load times will lose you customers.</p>
+                    <p>A page that loads in 3 seconds immediately loses 8% of visitors. A page that loads in 5 seconds immediately loses 38% of visitors. </p>
+                    <p>You might not even realize there’s a problem, but you’ll be losing customers before they even see your site. <b>I guarantee an average desktop load time of 1 second or lower for your website.</b></p>
+                </div>
+                
+            </div>
+        </div>  
+    </section> 
+
     <!--Price-->
     <section id="pricing" class="normalSection closeish">
         <div class="gradientBG"></div>
@@ -160,7 +248,7 @@ import Footer from "../components/footer.astro";
                         </div>
                     </div><br>
                     
-                    <a class="button secondary fill"><p>Let's Get Started</p></a>
+                    <a href="#contact" class="button secondary fill"><p>Let's Get Started</p></a>
                 </div>
             </div>
             <div class="box fill small center card highlight">
@@ -202,7 +290,7 @@ import Footer from "../components/footer.astro";
                         </div>
                     </div><br>
                     
-                    <a class="button main fill"><p>Let's Get Started</p></a>
+                    <a href="#contact" class="button main fill"><p>Let's Get Started</p></a>
                 </div>
                 
             </div> 
@@ -245,84 +333,82 @@ import Footer from "../components/footer.astro";
                         </div>
                     </div><br>
                     
-                    <a class="button secondary fill"><p>Get In Touch</p></a>
+                    <a href="#contact" class="button secondary fill"><p>Get In Touch</p></a>
                 </div>
                 
             </div> 
         </div>
     </section>
 
-    <!--Custom Code-->
-    <section class="normalSection">
-        <div class="container mobileFlip">
-            <div class="box">
-                <picture>
-                    <source srcset="images/mobile/code.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <source srcset="images/code.webp" media="(min-width: 481px)">
-                    <img class="normalImg fourByThree" src="images/code.webp" alt="VS Code folder making a website" loading="lazy">
-                </picture>
-            </div>
-            <div class="box">
-                <h3>Custom Coded Static Sites</h3>
-                <div class="box text">
-                    <p>Website builders and frameworks can make cool websites, but they come at a cost. That cost is performance.</p>
-                    <p>Fancy animations, and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have 3 things: simplicity, clarity, and really fast page speeds.</p>
-                    <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
-                </div>
-                
-            </div>
-        </div>  
-    </section>
-
-    <!--SEO-->
-    <section class="normalSection" style="background-color: var(--off-gray);">
-        <div class="container">
-            
-            <div class="box">
-                <h3>Search Engine Optimization</h3>
-                <div class="box text">
-                    <p>There’s a lot of misleading information about Search Engine Optimization. I want to cut through the noise and focus on the things that actually matter.</p>
-                    <p>Your website will be a rock-solid foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. </p>
-                    <p>You need your website to be the bedrock of your SEO strategies. Give yourself the opportunity to scale without worry.</p>
-                </div>
-                
-            </div>
-            <div class="box">
-                <picture>
-                    <source srcset="images/mobile/seo-laptop.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <source srcset="images/seo-laptop.webp" media="(min-width: 481px)">
-                    <img class="normalImg fourByThree" src="images/seo-laptop.webp" alt="google search webpage on laptop" loading="lazy">
-                </picture>
-            </div>
+	<!-- FAQ -->
+	<section class="normalSection closeish">
+		<div class="container noPaddingBot">
+            <div class="box center"><h2 class="pSmall thin tag darkBack">FAQs</h2></div>
         </div>
-    </section>
-
-    <!--Performance-->
-    <section class="normalSection">
-        <div class="container mobileFlip">
-            <div class="box">
-                <picture>
-                    <source srcset="images/mobile/pagespeed.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <source srcset="images/pagespeed.webp" media="(min-width: 481px)">
-                    <img class="normalImg fourByThree" src="images/pagespeed.webp" alt="pagespeed insights high performing webpage" loading="lazy">
-                </picture>
-                
-            </div>
-            <div class="box">
-                <h3>Maximize Website Performance</h3>
-                <div class="box text">
-                    <p>Slow load times will lose you customers.</p>
-                    <p>A page that loads in 3 seconds immediately loses 8% of visitors. A page that loads in 5 seconds immediately loses 38% of visitors. </p>
-                    <p>You might not even realize there’s a problem, but you’ll be losing customers before they even see your site. <b>I guarantee an average desktop load time of 1 second or lower for your website.</b></p>
-                </div>
-                
-            </div>
-        </div>  
-    </section> 
+		<div class="container noPaddingTop noPaddingBot">
+			<div class="box center">
+				<h3 class="h2">Frequently Asked Questions</h3>
+			</div>
+		</div>
+		<div class="container noPaddingTop top mobile8Gap">
+			<div class="box closer">
+				<details name="accordion1">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Question Number 1</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 1</p>
+					</div>
+				</details>
+				<details name="accordion1">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Question Number 2</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 2</p>
+					</div>
+				</details>
+				<details name="accordion1">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Question Number 3</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 3</p>
+					</div>
+				</details>
+			</div>
+			<div class="box closer">
+				<details name="accordion2">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Question Number 4</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 4</p>
+					</div>
+				</details>
+				<details name="accordion2">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Question Number 5</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 5</p>
+					</div>
+				</details>
+				<details name="accordion2">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Question Number 6</p>
+					</summary>
+					<div class="answer">
+						<p>Answer Number 6</p>
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>
 
     <!--ABOUT-->
     <section id="about" class="normalSection closeish " style="background-color: var(--off-gray);" >
-        <div class="container apart">
+        <div class="container apart mobileFlip">
             
             <div class="box closest">
                 <h3>Ethan Coote</h3>
@@ -338,82 +424,24 @@ import Footer from "../components/footer.astro";
                 </div>
                 
             </div>
-            <div class="box limit400">
-                <picture>
+            <div class="box center" id="profileImg">
+                <picture class="limit400">
                     <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
                     <source srcset="images/profile.webp" media="(min-width: 481px)">
-                    <img class="normalImg circle square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
+                    <img  class="normalImg circle square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
                 </picture>
                 
             </div>
         </div>
+        <style>
+            @media only screen and (max-width: 900px) {
+                #profileImg {
+                    max-width: 70%;
+                }
+            }
+            
+        </style>
     </section>
-
-	<!-- FAQ -->
-	<section class="normalSection closeish">
-		<div class="container noPaddingBot">
-            <div class="box center"><h2 class="pSmall thin tag darkBack">FAQs</h2></div>
-        </div>
-		<div class="container noPaddingTop noPaddingBot">
-			<div class="box center">
-				<h3 class="h2">Frequently Asked Questions</h3>
-			</div>
-		</div>
-		<div class="container noPaddingTop top">
-			<div class="box closer">
-				<details name="accordion1">
-					<summary class="box across apart">
-						<p class="pLarge">Question Number 1</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 1</p>
-					</div>
-				</details>
-				<details name="accordion1">
-					<summary class="box across apart">
-						<p class="pLarge">Question Number 2</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 2</p>
-					</div>
-				</details>
-				<details name="accordion1">
-					<summary class="box across apart">
-						<p class="pLarge">Question Number 3</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 3</p>
-					</div>
-				</details>
-			</div>
-			<div class="box closer">
-				<details name="accordion2">
-					<summary class="box across apart">
-						<p class="pLarge">Question Number 4</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 4</p>
-					</div>
-				</details>
-				<details name="accordion2">
-					<summary class="box across apart">
-						<p class="pLarge">Question Number 5</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 5</p>
-					</div>
-				</details>
-				<details name="accordion2">
-					<summary class="box across apart">
-						<p class="pLarge">Question Number 6</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 6</p>
-					</div>
-				</details>
-			</div>
-		</div>
-	</section>
 	
     <!--Guarantees-->
     <section class="normalSection closeish">
@@ -455,7 +483,7 @@ import Footer from "../components/footer.astro";
             <div class="box center limit">
                 <h2>Let Your Customers Find You Online</h2>
                 <p>Your business needs a professional website for potential clients to find you. 92% of customers will visit a local businesses’ website when deciding which business to use. Don’t get left behind.</p>
-                <a class="button main"><p>Let's Get Started</p></a>
+                <a href="#contact" class="button main"><p>Let's Get Started</p></a>
             </div>
         </div>
             
@@ -468,7 +496,7 @@ import Footer from "../components/footer.astro";
         </div>
         <div class="container noPaddingTop">
             <div class="box">
-                <h3>Get Your Free Quote Today</h3>
+                <h3>Let's Get in Touch</h3>
                 <form class="box close" action="https://formsubmit.co/013156e829aadb58d778adcecfdb1fbd" method="POST">
                     <div class="box across close">
                         <div class="box closest">
