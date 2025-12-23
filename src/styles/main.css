@@ -601,7 +601,8 @@ html {
 }
 
 .square {
-    aspect-ratio: 1/1;
+    width: 100%;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 
@@ -616,16 +617,19 @@ html {
     background-color: var(--off-gray);
     padding:4px;
     border-radius: 100px;
+    aspect-ratio: 1;
 }
 
 .iconSmall {
     height: 32px;
     width: auto;
+    aspect-ratio: 1;
 }
 
 .iconTiny {
     height: 20px;
     width: auto;
+    aspect-ratio: 1;
 }
 .heroImage {
     border-radius: 100px;

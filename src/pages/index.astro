@@ -189,7 +189,7 @@ import Footer from "../components/footer.astro";
     <section class="normalSection" style="background-color: var(--off-gray);">
         <div class="container">
             <div class="box center">
-                <img class="square limit400 " src="images/100Performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                <img class="normalImg square limit400" src="images/100Performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
             </div>
             <div class="box">
                 <h3>Maximize Website Performance</h3>
@@ -220,23 +220,23 @@ import Footer from "../components/footer.astro";
                     <div class="box close">
                         <p><i>What's Included:</i></p>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon" width="32" height="32">
                             <p>Conversion Focused Landing Page</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                             <p>Technical SEO Setup</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                             <p>Copywriting</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                             <p>Branded With Your Logo, Colours, and Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                             <p>Linked to Your Social Media</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
@@ -425,10 +425,9 @@ import Footer from "../components/footer.astro";
                 </div>
                 
             </div>
-            <div class="box center" id="profileImg">
-                <picture class="limit400">
+            <div class="box center" >
+                <picture class="limit400 square" id="profileImg">
                     <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <source srcset="images/profile.webp" media="(min-width: 481px)">
                     <img  class="normalImg circle square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
                 </picture>
                 
@@ -443,7 +442,7 @@ import Footer from "../components/footer.astro";
             
         </style>
     </section>
-	
+
     <!--Guarantees-->
     <section class="normalSection closeish">
         <div class="gradientBG"></div>
