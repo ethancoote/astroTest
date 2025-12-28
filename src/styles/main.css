@@ -631,6 +631,10 @@ html {
     width: auto;
     aspect-ratio: 1;
 }
+#performance {
+    object-position: top;
+}
+
 .heroImage {
     border-radius: 100px;
     width: 100%;
@@ -776,5 +780,5 @@ details[open] summary::after {
 }
 
 .answer {
-    padding: 0px 0px 4px 0px;
+    padding: 8px 0px 12px 0px;
 }

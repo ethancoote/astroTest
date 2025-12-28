@@ -14,6 +14,7 @@ import Footer from "../components/footer.astro";
 		<meta name="generator" content={Astro.generator} />
         <meta name="description" content="Landing Page for Ethan Coote Website Development">
 		<title>Web Developer | Ethan Coote</title>
+
 		<style>
 			@font-face {
 				font-display: swap;
@@ -30,6 +31,7 @@ import Footer from "../components/footer.astro";
 				src: url('/fonts/roboto-v50-latin-700.woff2') format('woff2');
 			}
     	</style>
+        
 	</head>
 	<body>
 
@@ -126,7 +128,7 @@ import Footer from "../components/footer.astro";
             <div class="box">
                 <picture>
                     <source srcset="images/mobile/mockup.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <img class="sixteenByNine" src="images/mockup.webp" alt="painter landing page mockup" loading="lazy">
+                    <img class="normalImg sixteenByNine" src="images/mockup.webp" alt="painter landing page mockup" loading="lazy">
                 </picture>
             </div>
             <div class="box">
@@ -189,7 +191,7 @@ import Footer from "../components/footer.astro";
     <section class="normalSection" style="background-color: var(--off-gray);">
         <div class="container">
             <div class="box center">
-                <img class="normalImg square limit400" src="images/100Performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                <img id="performance" class="normalImg fourByThree outline" src="images/pagespeed.webp" alt="pagespeed insights high performing webpage" loading="lazy">
             </div>
             <div class="box">
                 <h3>Maximize Website Performance</h3>
@@ -351,56 +353,40 @@ import Footer from "../components/footer.astro";
 				<h3 class="h2">Frequently Asked Questions</h3>
 			</div>
 		</div>
-		<div class="container noPaddingTop top mobile8Gap">
+		<div class="container lightPaddingTop top mobile8Gap">
 			<div class="box closer">
 				<details name="accordion1">
 					<summary class="box acrossTrue apart">
-						<p class="pLarge">Question Number 1</p>
+						<p class="pLarge">Do I get to request revisions for my website?</p>
 					</summary>
 					<div class="answer">
-						<p>Answer Number 1</p>
+						<p class="subtextBlack">Yes. All projects come with 1 round of revisions. You will have 48 hours to send your revisions. Additional rounds of revisions are $100CAD each. I limit revision rounds to get your website online as fast as possible.<br><br>In my experience, a long revision phase tends to waste a lot of time, and often results in a weaker final product.</p>
 					</div>
 				</details>
 				<details name="accordion1">
 					<summary class="box acrossTrue apart">
-						<p class="pLarge">Question Number 2</p>
+						<p class="pLarge">Do you handle hosting?</p>
 					</summary>
 					<div class="answer">
-						<p>Answer Number 2</p>
-					</div>
-				</details>
-				<details name="accordion1">
-					<summary class="box acrossTrue apart">
-						<p class="pLarge">Question Number 3</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 3</p>
+						<p class="subtextBlack">Yes. For hosting I charge $20CAD/month for landing pages, and $30CAD/month for standard sites. If you pay annually, you get the first 3 months of hosting free.</p>
 					</div>
 				</details>
 			</div>
 			<div class="box closer">
 				<details name="accordion2">
 					<summary class="box acrossTrue apart">
-						<p class="pLarge">Question Number 4</p>
+						<p class="pLarge">How long does development take?</p>
 					</summary>
 					<div class="answer">
-						<p>Answer Number 4</p>
+						<p class="subtextBlack">I guarantee a 7 day delivery (business days only). The project starts after you have provided all of your branding and images.</p>
 					</div>
 				</details>
 				<details name="accordion2">
 					<summary class="box acrossTrue apart">
-						<p class="pLarge">Question Number 5</p>
+						<p class="pLarge">What platforms do you use to build websites?</p>
 					</summary>
 					<div class="answer">
-						<p>Answer Number 5</p>
-					</div>
-				</details>
-				<details name="accordion2">
-					<summary class="box acrossTrue apart">
-						<p class="pLarge">Question Number 6</p>
-					</summary>
-					<div class="answer">
-						<p>Answer Number 6</p>
+						<p class="subtextBlack">Most of my websites are completely custom coded with HTML, CSS and JavaScript. I use the Astro framework for static site generation, and I use Firebase for static hosting.<br><br>I also build websites using Framer. If you would specifically like a Framer website then reach out and we can discuss the pros and cons.</p>
 					</div>
 				</details>
 			</div>
