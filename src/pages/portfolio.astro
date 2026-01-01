@@ -43,6 +43,12 @@ import Footer from "../components/footer.astro";
             </div>
             <div class="divider"></div>
         </div>
+        <div class="lightbox">
+            <img id="lightboxImg" src="images/portfolio/apexFull.webp" alt="apex auto homepage image">
+            <div id="lightboxClose">
+                <img class="icon" src="images/close.png" alt="close X">
+            </div>
+        </div>
         <div class="container grid top apart noPaddingTop">
             
             <a class="box closer portfolioItem margin16" href="https://chalkie.ai/" target="_blank">
@@ -76,7 +82,8 @@ import Footer from "../components/footer.astro";
                     <p class="subtextBlack">Bug Fixes and UI Updates</p>
                 </div>
             </a>
-            <a class="box closer portfolioItem margin16" href="https://apexauto.framer.website/" target="_blank">
+            <div class="box closer portfolioItem margin16">
+                
                 <div class="box relative">
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
@@ -91,7 +98,7 @@ import Footer from "../components/footer.astro";
                     </div>
                     <p class="subtextBlack">Design & Development</p>
                 </div>
-            </a>
+            </div>
             <a class="box closer portfolioItem margin16" href="https://elevatehomesspec.framer.website/" target="_blank">
                 <div class="box relative">
                     <div class="hoverTextBox">

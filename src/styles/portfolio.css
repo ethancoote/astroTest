@@ -32,3 +32,37 @@
 .relative {
     position: relative;
 }
+
+.lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.5);
+    z-index: 100;
+    /*display: none;*/
+}
+
+#lightboxImg {
+    object-fit: cover;
+    height: 90%;
+    min-width: 400px;
+    object-position: top;
+    border-radius: var(--border-radius);
+}
+
+#lightboxClose {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    transition: 0.3s;
+}
+
+#lightboxClose:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+}
