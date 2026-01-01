@@ -34,7 +34,6 @@
 }
 
 .lightbox {
-    display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -44,13 +43,13 @@
     height: 100%;
     background: hsla(0, 0%, 0%, 0.5);
     z-index: 100;
-    /*display: none;*/
+    display: none;
 }
 
 #lightboxImg {
     object-fit: cover;
     height: 90%;
-    min-width: 400px;
+    min-width: 350px;
     object-position: top;
     border-radius: var(--border-radius);
 }
@@ -65,4 +64,17 @@
 #lightboxClose:hover {
     cursor: pointer;
     filter: brightness(70%);
+}
+
+@media only screen and (max-width: 600px) {
+    #lightboxImg {
+        min-width: auto;
+        width: 85%;
+        height: 85%;
+    }
+
+    #lightboxClose {
+        top: 8px;
+        right: 8px;
+    }
 }

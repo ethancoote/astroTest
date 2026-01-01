@@ -395,8 +395,14 @@ import Footer from "../components/footer.astro";
 
     <!--ABOUT-->
     <section id="about" class="normalSection closeish " style="background-color: var(--off-gray);" >
-        <div class="container apart mobileFlip">
-            
+        <div class="container apart">
+            <div class="box limit400">
+                <picture class="square" id="profileImg">
+                    <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <img  class="normalImg square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
+                </picture>
+                
+            </div>
             <div class="box closest">
                 <h3>Ethan Coote</h3>
                 <h4 class="p thin">Website Developer</h4><br><br>
@@ -411,13 +417,9 @@ import Footer from "../components/footer.astro";
                 </div>
                 
             </div>
-            <div class="box center" >
-                <picture class="limit400 square" id="profileImg">
-                    <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <img  class="normalImg circle square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
-                </picture>
-                
-            </div>
+            
+            
+            
         </div>
         <style>
             @media only screen and (max-width: 900px) {
