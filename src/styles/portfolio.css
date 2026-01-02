@@ -69,7 +69,7 @@
 @media only screen and (max-width: 600px) {
     #lightboxImg {
         min-width: auto;
-        width: 85%;
+        width: 70%;
         height: 85%;
     }
 
