@@ -5,6 +5,7 @@ import '../styles/fonts.css';
 import '../styles/portfolio.css';
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
+import Gtag from "../components/Gtag.astro";
 ---
 
 <html lang="en">
@@ -13,8 +14,8 @@ import Footer from "../components/footer.astro";
 		<link rel="icon" type="image/svg+xml" href="/images/logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-        <meta name="description" content="Landing Page for Ethan Coote Website Development">
-		<title>Web Developer | Ethan Coote</title>
+        <meta name="description" content="Web developer based in Guelph, Ontario. I build fast, responsive websites for service businesses.">
+		<title>Ethan Coote | Web Developer</title>
 
 		<style>
 
@@ -34,7 +35,7 @@ import Footer from "../components/footer.astro";
 				src: url('/fonts/roboto-v50-latin-700.woff2') format('woff2');
 			}
     	</style>
-        
+        <Gtag />
 	</head>
 	<body>
 
@@ -787,7 +788,6 @@ import Footer from "../components/footer.astro";
             </div>
         </div>
     </section>
-
 	<Footer />
 
     <script src="../scripts/lightbox.js"></script>
