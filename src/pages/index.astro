@@ -2,6 +2,7 @@
 import '../styles/reset.css';
 import '../styles/main.css';
 import '../styles/fonts.css';
+import '../styles/portfolio.css';
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 ---
@@ -9,7 +10,7 @@ import Footer from "../components/footer.astro";
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/images/logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
         <meta name="description" content="Landing Page for Ethan Coote Website Development">
@@ -41,8 +42,9 @@ import Footer from "../components/footer.astro";
 
 	<!--HERO-->
     <main id="home" class="normalSection hero">
-        <div class="container">
+        <div class="container close">
             <div class="box hero">
+                <!-- 
                 <div id="heroReviews" class="box acrossTrue closer centerAlign tag dark shrink visCenter centerMobile">
                     <img class="icon" src="images/googleLogo.webp" alt="checkmark icon">
                     <div class="box closest">
@@ -55,6 +57,12 @@ import Footer from "../components/footer.astro";
                         </div>
                         <p class="pTiny"><b>5</b> of <b>5 Stars</b></p>
                     </div>
+                </div>-->
+                <div class="box acrossTrue centerMobile">
+                    <img class="icon square" src="images/htmlLogo.webp">
+                    <img class="icon square" src="images/cssLogo.webp">
+                    <img class="icon square" src="images/jsLogo.webp">
+                    <img class="icon square" src="images/astroLogo.webp">
                 </div>
                 
                 <h1 id="headline">Professional Websites<br><span class="color">For Service Businesses</span></h1>
@@ -72,38 +80,45 @@ import Footer from "../components/footer.astro";
                 <div id="tagsDesktop" class="box close centerMobile across">
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
-                        <p>Money-Back Guarantee</p>
+                        <p>Bug-Fix Guarantee</p>
                     </div>
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
-                        <p>7-Day Delivery</p>
+                        <p>14-Day Delivery</p>
                     </div>
                 </div>
             </div>
             <div class="box closer center">
-                
+                <picture>
+                    <source srcset="images/mobile/mockup.webp" media="(min-width: 0px) and (max-width: 480px)">
+                    <img class="normalImg" id="heroImage2" src="images/mockup.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">
+                </picture>
+
+                <!-- 
                 <img class="heroImage" id="heroImage3" src="images/woman-laptop.webp" alt="woman working on a laptop">
                 <picture>
                     <source srcset="images/mobile/laptop.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <source srcset="images/laptop.webp" media="(min-width: 481px)">
                     <img class="heroImage" id="heroImage2" src="images/laptop.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">
                 </picture>
-                <!--<img class="heroImage" id="heroImage2" src="images/laptop.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">-->
-                <img class="heroImage" id="heroImage1" src="images/man-in-shop.webp" alt="older man standing in a shop">
+                <img class="heroImage" id="heroImage1" src="images/man-in-shop.webp" alt="older man standing in a shop">-->
                 
             </div>
             <div id="tagsMobile" class="box close centerMobile across">
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                        <p>Money-Back Guarantee</p>
+                        <p>Bug-Fix Guarantee</p>
                     </div>
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
                         <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                        <p>7-Day Delivery</p>
+                        <p>14-Day Delivery</p>
                     </div>
                 </div>
         </div>
 		<style>
+            #subHeadline {
+                text-wrap: auto;
+            }
+
 			@media only screen and (max-width: 900px){
 				#tagsDesktop {
 					display: none;
@@ -124,8 +139,180 @@ import Footer from "../components/footer.astro";
 		</style>
     </main>
 	
+    <!--PORTFOLIO-->
+    <section class="normalSection close" id="portfolio">
+        <div class="container noPaddingBot">
+            <div class="box center"><h2 class="pSmall thin darkBack tag">Portfolio</h2></div>
+        </div>
+        <div class="noPaddingBot lightPaddingTop container closeish acrossTrue">
+
+            <div class="divider mobileHide"></div>
+            <div class="box center">
+                <h2>Recent Projects</h2>
+            </div>
+            
+            <div class="divider mobileHide"></div>
+
+        </div>
+        <div class="lightbox">
+            <img id="lightboxImg" src="images/portfolio/apexFull.webp" alt="apex auto homepage image">
+            <div id="lightboxClose">
+                <img class="icon" src="images/close.png" alt="close X">
+            </div>
+        </div>
+        <div class="container grid top apart noPaddingTop closeish">
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/trueauto.webp" alt="Chalkie AI homepage mockup">
+                </div>
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">True Auto Detailing</p>
+                        <p class="subtextBlack">01/2026</p>
+                    </div>
+                    <p class="subtextBlack">Design & Development</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/chalkie.webp" alt="Chalkie AI homepage mockup">
+                </div>
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">Chalkie AI</p>
+                        <p class="subtextBlack">12/2025</p>
+                    </div>
+                    <p class="subtextBlack">SEO & Performance Optimization</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/nycurls.webp" alt="NY-Curls homepage mockup">
+                </div>
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">NY Curls</p>
+                        <p class="subtextBlack">12/2025</p>
+                    </div>
+                    <p class="subtextBlack">Design and Development</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/bim.webp" alt="The BIM Builders homepage mockup">
+                </div>
+                
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">The BIM Builders</p>
+                        <p class="subtextBlack">11/2025</p>
+                    </div>
+                    <p class="subtextBlack">Bug Fixes and UI Updates</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/kansasvc.webp" alt="The Kansas VC homepage mockup">
+                </div>
+                
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">Kansas Vet Clinic</p>
+                        <p class="subtextBlack">11/2025</p>
+                    </div>
+                    <p class="subtextBlack">Design & Development</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/apex.webp" alt="apex auto homepage mockup">
+                </div>
+                
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">Apex Auto</p>
+                        <p class="subtextBlack">10/2025</p>
+                    </div>
+                    <p class="subtextBlack">Design & Development</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/greenway.webp" alt="apex auto homepage mockup">
+                </div>
+                
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">Greenway Landscaping</p>
+                        <p class="subtextBlack">10/2025</p>
+                    </div>
+                    <p class="subtextBlack">Design & Development</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/elevate.webp" alt="elevate homes homepage mockup">
+                </div>
+                
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">Elevate Homes</p>
+                        <p class="subtextBlack">10/2025</p>
+                    </div>
+                    <p class="subtextBlack">Design & Development</p>
+                </div>
+            </div>
+            <div class="box closer portfolioItem margin16">
+                <div class="box relative">
+                    <div class="hoverTextBox">
+                        <p class="hoverText pLarge">+<br>Design Preview</p>
+                    </div>
+                    <img class="normalImg outline" src="../images/portfolio/arlo.webp" alt="Alro homepage mockup">
+                </div>
+                
+                <div class="box closest">
+                    <div class="box acrossTrue apart">
+                        <p class="pLarge black">Arlo Vega Portfolio</p>
+                        <p class="subtextBlack">09/2025</p>
+                    </div>
+                    <p class="subtextBlack">Design & Development</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container noPaddingTop lightPaddingBot">
+            <div class="divider mobileHide"></div>
+        </div>
+    </section>
+
     <!--Mockup -->
-    <section id="mockup" class="normalSection" style="background-color: var(--off-gray);">
+    <section id="mockup" class="normalSection">
         <div class="container">
             <div class="box">
                 <picture>
@@ -136,8 +323,8 @@ import Footer from "../components/footer.astro";
             <div class="box">
                 <h2 class="h3">Fast, Custom Coded Sites</h2>
                 <div class="box text">
-                    <p>Website builders and frameworks can make cool websites, but they come at a cost. That cost is performance.</p>
-                    <p>Fancy animations, and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have 3 things: simplicity, clarity, and really fast page speeds.</p>
+                    <p>Website builders and frameworks can make cool websites, but they come at the cost of performance.</p>
+                    <p>Fancy animations and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have clarity, and really fast page speeds.</p>
                     <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
                 </div>
                 
@@ -346,7 +533,7 @@ import Footer from "../components/footer.astro";
     </section>
 
 	<!-- FAQ -->
-	<section class="normalSection closeish">
+	<section class="normalSection closeish" >
 		<div class="container noPaddingBot">
             <div class="box center"><h2 class="pSmall thin tag darkBack">FAQs</h2></div>
         </div>
@@ -359,7 +546,7 @@ import Footer from "../components/footer.astro";
 			<div class="box closer">
 				<details name="accordion1">
 					<summary class="box acrossTrue apart">
-						<p class="pLarge">Do I get to request revisions for my website?</p>
+						<p class="pLarge">Can I request revisions for my website?</p>
 					</summary>
 					<div class="answer">
 						<p class="subtextBlack">Yes. All projects come with 1 round of revisions. You will have 48 hours to send your revisions. Additional rounds of revisions are $100CAD each. I limit revision rounds to get your website online as fast as possible.<br><br>In my experience, a long revision phase tends to waste a lot of time, and often results in a weaker final product.</p>
@@ -392,12 +579,17 @@ import Footer from "../components/footer.astro";
 					</div>
 				</details>
 			</div>
+            
 		</div>
+        
 	</section>
 
     <!--ABOUT-->
-    <section id="about" class="normalSection closeish " style="background-color: var(--off-gray);" >
-        <div class="container apart">
+    <section id="about" class="normalSection closeish">
+        <div class="container lightPaddingBot">
+            <div class="box center"><h2 class="pSmall thin tag darkBack">About</h2></div>
+        </div>
+        <div class="container apart noPaddingTop">
             <div class="box limit400">
                 <picture class="square" id="profileImg">
                     <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
@@ -407,7 +599,7 @@ import Footer from "../components/footer.astro";
             </div>
             <div class="box closest">
                 <h3>Ethan Coote</h3>
-                <h4 class="p thin">Website Developer</h4><br><br>
+                <h4 class="p thin">Web Developer</h4><br><br>
                 <div class="box text">
                     <p>Hey, my name's Ethan. I'm a Canadian web developer living in Guelph, Ontario.</p>
                     <p>I build simple websites with a strong focus on performance and conversion optimization. I’ve been building websites as a hobby for years, and started my business as a freelancer in 2025. Feel free to reach out if you have any questions, or you’d like a custom quote.</p>
@@ -419,21 +611,11 @@ import Footer from "../components/footer.astro";
                 </div>
                 
             </div>
-            
-            
-            
         </div>
-        <style>
-            @media only screen and (max-width: 900px) {
-                #profileImg {
-                    max-width: 70%;
-                }
-            }
-            
-        </style>
+
     </section>
 
-    <!--Guarantees-->
+    <!--Guarantees
     <section class="normalSection closeish">
         <div class="gradientBG"></div>
         <div class="container noPaddingBot">
@@ -456,31 +638,33 @@ import Footer from "../components/footer.astro";
                 </div>
                 <div class="box fill close center card stretch outline">
                     <img class="icon" src="images/lightning.svg" alt="lightning icon" loading="lazy" width="32" height="32">
-                    <h4>7-Day Turnaround Guarantee</h4>
+                    <h4>14-Day Turnaround Guarantee</h4>
                     <p>Your business could be online this week. Big web design agencies will spend months building your website, going back and forth with round after round of revisions.</p>
-                    <p>By streamlining the development process, and including just 1 round of revisions, I can guarantee your website will be online within 7-days of your order.</p>
+                    <p>By streamlining the development process, and including just 1 round of revisions, I can guarantee your website will be online within 14-days of your order.</p>
                 </div>
                 
                 
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!--CTA-->
     <section class="normalSection">
+        <div class="gradientBG"></div>
         <div class="container">
-        <div class="box center">
-            <div class="box center limit">
-                <h2>Let Your Customers Find You Online</h2>
-                <p>Your business needs a professional website for potential clients to find you. 92% of customers will visit a local businesses’ website when deciding which business to use. Don’t get left behind.</p>
-                <a href="#contact" class="button main"><p>Let's Get Started</p></a>
+            <div class="box center fill">
+                <div class="box center limit">
+                    <h2>Let Your Customers Find You Online</h2>
+                    <p>Your business needs a professional website for potential clients to find you. 92% of customers will visit a local businesses’ website when deciding which business to use. Don’t get left behind.</p>
+                    <a href="#contact" class="button main"><p>Let's Get Started</p></a>
+                </div>
             </div>
         </div>
             
     </section>
 
     <!--CONTACT-->
-    <section id="contact" class="normalSection close" style="background-color: var(--off-gray);">
+    <section id="contact" class="normalSection close" >
         <div class="container lightPaddingBot">
             <div class="box center"><h2 class="pSmall thin tag darkBack ">Contact</h2></div>
         </div>
@@ -518,6 +702,8 @@ import Footer from "../components/footer.astro";
             </div>
             <div class="box close">
                 <div class="box close centerMobile across apart endAlign">
+                    <div id="placeholder"></div>
+                    <!-- 
                     <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter centerMobile">
                         <img class="icon" src="images/googleLogo.webp" alt="Google Logo">
                         <div class="box closest">
@@ -530,16 +716,17 @@ import Footer from "../components/footer.astro";
                             </div>
                             <p class="pTiny"><b>5</b> of <b>5 Stars</b></p>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="box close centerMobile shrink endAlign">
+                        <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
+                            <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>14-Day Delivery</p>
+                        </div>
                         <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
                             <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon">
                             <p>Bug Fix Guarantee</p>
                         </div>
-                        <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
-                            <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Money-Back Guarantee</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="box fill card close outline lightPaddingBot">
@@ -582,5 +769,7 @@ import Footer from "../components/footer.astro";
     </section>
 
 	<Footer />
+
+    <script src="../scripts/lightbox.js"></script>
 	</body>
 </html>

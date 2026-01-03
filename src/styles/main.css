@@ -239,12 +239,6 @@ html {
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .normalSection.hero .container {
-        column-gap: 16px;
-    }
-}
-
 .gradientBG {
     position:absolute;
     background-image: linear-gradient(to left, hsla(221, 76%, 42%, .15),hsla(138, 82%, 17%, 0.1));
@@ -310,11 +304,15 @@ html {
     }
 }
 
+
+
 .divider {
     height: 1px;
     width: 100%;
-    background-color: hsla(0, 0%, 0%, .5);
+    background-color: hsla(0, 0%, 0%, .3);
 }
+
+
 
 .tag {
     background-color: var(--off-white);
@@ -483,7 +481,13 @@ html {
 .limit400 {
     max-width:400px;
 }
+.mobileHide {
+    display: flex;
+}
 @media only screen and (max-width:900px) {
+    .mobileHide {
+        display: none;
+    }
     .box.across {
         flex-direction: column;
     }
@@ -531,6 +535,12 @@ html {
 @media only screen and (max-width: 900px) {
     .button {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mobileHide {
+        display: none;
     }
 }
 
