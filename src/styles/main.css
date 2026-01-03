@@ -481,6 +481,9 @@ html {
 .limit400 {
     max-width:400px;
 }
+.limit300 {
+    max-width:300px;
+}
 .mobileHide {
     display: flex;
 }
@@ -510,10 +513,22 @@ html {
     .limit400 {
         max-width:none;
     }
+    .limit300 {
+        max-width:none;
+    }
 }
 
 .darkBack {
     background-color: var(--black-tint);
+}
+.lightBack {
+    background-color: hsla(0, 0%, 100%, .3);
+}
+.primaryBack {
+    background-color: var(--primary-color);
+}
+.primary {
+    color: var(--primary-color);
 }
 
 /*BUTTONS AND ANCHORS*/
@@ -698,6 +713,12 @@ html {
 .textArea {
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+select {
+    background-color: var(--black-tint);
+    font-size: 1.8rem;
+    color:hsla(0, 0%, 0%, .9)
 }
 
 /*FOOTER*/

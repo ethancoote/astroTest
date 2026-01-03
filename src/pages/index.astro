@@ -59,10 +59,10 @@ import Footer from "../components/footer.astro";
                     </div>
                 </div>-->
                 <div class="box acrossTrue centerMobile">
-                    <img class="icon square" src="images/htmlLogo.webp">
-                    <img class="icon square" src="images/cssLogo.webp">
-                    <img class="icon square" src="images/jsLogo.webp">
-                    <img class="icon square" src="images/astroLogo.webp">
+                    <img class="icon square" src="images/htmlLogo.webp" alt="html logo">
+                    <img class="icon square" src="images/cssLogo.webp" alt="css logo">
+                    <img class="icon square" src="images/jsLogo.webp" alt="js logo">
+                    <img class="icon square" src="images/astroLogo.webp" alt="astro logo">
                 </div>
                 
                 <h1 id="headline">Professional Websites<br><span class="color">For Service Businesses</span></h1>
@@ -72,7 +72,7 @@ import Footer from "../components/footer.astro";
                         <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
                     </a>
-                    <a href="#mockup" class="button secondary"><p class="buttonText">Learn More</p>
+                    <a href="#learn" class="button secondary"><p class="buttonText">Learn More</p>
                         <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="svgArrow" d="M18.7071 8.07107C19.0976 7.68055 19.0976 7.04739 18.7071 6.65686L12.3431 0.2929C11.9526 -0.0976242 11.3195 -0.0976242 10.9289 0.2929C10.5384 0.683424 10.5384 1.31659 10.9289 1.70711L16.5858 7.36397L10.9289 13.0208C10.5384 13.4113 10.5384 14.0445 10.9289 14.435C11.3195 14.8256 11.9526 14.8256 12.3431 14.435L18.7071 8.07107ZM0 7.36397L0 8.36397L18 8.36397V7.36397V6.36397L0 6.36397L0 7.36397Z"/></svg>
                     </a>
@@ -307,11 +307,30 @@ import Footer from "../components/footer.astro";
             
         </div>
         <div class="container noPaddingTop lightPaddingBot">
-            <div class="divider mobileHide"></div>
+            <div class="divider"></div>
         </div>
     </section>
 
-    <!--Mockup -->
+    <!--Performance-->
+    <section class="normalSection" id="learn">
+        <div class="container">
+            <div class="box center">
+                <img id="performance" class="normalImg square outline" src="images/performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+            </div>
+            <div class="box">
+                <h3>Fast, Custom Coded Websites</h3>
+                <div class="box text">
+                    <p>Website builders and frameworks can make cool websites, but they come at the cost of performance. <b>Slow load times will lose you customers.</b></p>
+                    <p>A page that loads in 3 seconds immediately loses 8% of visitors. A page that loads in 5 seconds immediately loses 38% of visitors. </p>
+                    <p>You might not even realize there’s a problem, but you’ll be losing customers before they even see your site.</p> 
+                    <p>That's why I build custom coded websites using HTML, CSS, JavaScript, and the Astro Framework. I guarantee an average desktop load time of <b>2 seconds or lower</b> for all custom coded sites.</p>
+                </div>
+                
+            </div>
+        </div>  
+    </section> 
+
+    <!--Mockup 
     <section id="mockup" class="normalSection">
         <div class="container">
             <div class="box">
@@ -330,7 +349,7 @@ import Footer from "../components/footer.astro";
                 
             </div>
         </div>  
-    </section>
+    </section>-->
 
     <!--Custom Code
     <section class="normalSection">
@@ -361,9 +380,9 @@ import Footer from "../components/footer.astro";
             <div class="box">
                 <h3>Search Engine Optimization</h3>
                 <div class="box text">
-                    <p>There’s a lot of misleading information about Search Engine Optimization. I want to cut through the noise and focus on the things that actually matter.</p>
-                    <p>Your website will be a rock-solid foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. </p>
-                    <p>You need your website to be the bedrock of your SEO strategies. Give yourself the opportunity to scale without worry.</p>
+                    <p>There’s a lot of misleading information about <b>Search Engine Optimization</b>. I focus on the things that actually matter.</p>
+                    <p>Your website shoudl be the foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. That's why all my website packages come with a full on-page and technical SEO setup.</p>
+                    <p>You need your website to be the bedrock of your SEO strategies. Give yourself the opportunity to scale without wondering if your website is holding you back.</p>
                 </div>
                 
             </div>
@@ -375,24 +394,6 @@ import Footer from "../components/footer.astro";
             </div>
         </div>
     </section>
-
-    <!--Performance-->
-    <section class="normalSection" style="background-color: var(--off-gray);">
-        <div class="container">
-            <div class="box center">
-                <img id="performance" class="normalImg fourByThree outline" src="images/pagespeed.webp" alt="pagespeed insights high performing webpage" loading="lazy">
-            </div>
-            <div class="box">
-                <h3>Maximize Website Performance</h3>
-                <div class="box text">
-                    <p>Slow load times will lose you customers.</p>
-                    <p>A page that loads in 3 seconds immediately loses 8% of visitors. A page that loads in 5 seconds immediately loses 38% of visitors. </p>
-                    <p>You might not even realize there’s a problem, but you’ll be losing customers before they even see your site. <b>I guarantee an average desktop load time of 1 second or lower for your website.</b></p>
-                </div>
-                
-            </div>
-        </div>  
-    </section> 
 
     <!--Price-->
     <section id="pricing" class="normalSection closeish">
@@ -415,6 +416,10 @@ import Footer from "../components/footer.astro";
                             <p>Conversion Focused Landing Page</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Fully Responsive</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                             <p>Technical SEO Setup</p>
                         </div>
@@ -424,7 +429,7 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
-                            <p>Branded With Your Logo, Colours, and Assets</p>
+                            <p>Branded With Your Logo & Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
@@ -432,12 +437,9 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Custom Contact Form Connected to Your Email</p>
+                            <p>Custom Contact Form</p>
                         </div>
-                        <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Stock Images Sourced from Free Libraries</p>
-                        </div>
+                        
                     </div><br>
                     
                     <a href="#contact" class="button secondary fill"><p>Let's Get Started</p></a>
@@ -454,7 +456,7 @@ import Footer from "../components/footer.astro";
                         <p><i>What's Included:</i></p>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
-                            <p>5 Pages (Home, About, Services, Portfolio, Contact)</p>
+                            <p>5 Page Custom Website</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
@@ -462,11 +464,15 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Fully Responsive</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                             <p>Full Site Copywriting</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Branded With Your Logo, Colours, and Assets</p>
+                            <p>Branded With Your Logo & Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
@@ -474,11 +480,7 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Custom Contact Form Connected to Your Email</p>
-                        </div>
-                        <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Stock Images Sourced from Free Libraries</p>
+                            <p>Custom Contact Form</p>
                         </div>
                     </div><br>
                     
@@ -501,6 +503,10 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <p>Fully Responsive</p>
+                        </div>
+                        <div class="box acrossTrue close textLeft">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                             <p>On Page & Technical SEO Setup</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
@@ -509,7 +515,7 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Branded With Your Logo, Colours, and Assets</p>
+                            <p>Branded With Your Logo & Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
@@ -517,11 +523,7 @@ import Footer from "../components/footer.astro";
                         </div>
                         <div class="box acrossTrue close textLeft">
                             <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Custom Contact Form Connected to Your Email</p>
-                        </div>
-                        <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
-                            <p>Stock Images Sourced from Free Libraries</p>
+                            <p>Custom Contact Form</p>
                         </div>
                     </div><br>
                     
@@ -532,65 +534,13 @@ import Footer from "../components/footer.astro";
         </div>
     </section>
 
-	<!-- FAQ -->
-	<section class="normalSection closeish" >
-		<div class="container noPaddingBot">
-            <div class="box center"><h2 class="pSmall thin tag darkBack">FAQs</h2></div>
-        </div>
-		<div class="container noPaddingTop noPaddingBot">
-			<div class="box center">
-				<h3 class="h2">Frequently Asked Questions</h3>
-			</div>
-		</div>
-		<div class="container lightPaddingTop top mobile8Gap">
-			<div class="box closer">
-				<details name="accordion1">
-					<summary class="box acrossTrue apart">
-						<p class="pLarge">Can I request revisions for my website?</p>
-					</summary>
-					<div class="answer">
-						<p class="subtextBlack">Yes. All projects come with 1 round of revisions. You will have 48 hours to send your revisions. Additional rounds of revisions are $100CAD each. I limit revision rounds to get your website online as fast as possible.<br><br>In my experience, a long revision phase tends to waste a lot of time, and often results in a weaker final product.</p>
-					</div>
-				</details>
-				<details name="accordion1">
-					<summary class="box acrossTrue apart">
-						<p class="pLarge">Do you handle hosting?</p>
-					</summary>
-					<div class="answer">
-						<p class="subtextBlack">Yes. For hosting I charge $20CAD/month for landing pages, and $30CAD/month for standard sites. If you pay annually, you get the first 3 months of hosting free.</p>
-					</div>
-				</details>
-			</div>
-			<div class="box closer">
-				<details name="accordion2">
-					<summary class="box acrossTrue apart">
-						<p class="pLarge">How long does development take?</p>
-					</summary>
-					<div class="answer">
-						<p class="subtextBlack">I guarantee a 7 day delivery (business days only). The project starts after you have provided all of your branding and images.</p>
-					</div>
-				</details>
-				<details name="accordion2">
-					<summary class="box acrossTrue apart">
-						<p class="pLarge">What platforms do you use to build websites?</p>
-					</summary>
-					<div class="answer">
-						<p class="subtextBlack">Most of my websites are completely custom coded with HTML, CSS and JavaScript. I use the Astro framework for static site generation, and I use Firebase for static hosting.<br><br>I also build websites using Framer. If you would specifically like a Framer website then reach out and we can discuss the pros and cons.</p>
-					</div>
-				</details>
-			</div>
-            
-		</div>
-        
-	</section>
-
     <!--ABOUT-->
     <section id="about" class="normalSection closeish">
         <div class="container lightPaddingBot">
             <div class="box center"><h2 class="pSmall thin tag darkBack">About</h2></div>
         </div>
         <div class="container apart noPaddingTop">
-            <div class="box limit400">
+            <div class="box limit500">
                 <picture class="square" id="profileImg">
                     <source srcset="images/mobile/profile.webp" media="(min-width: 0px) and (max-width: 480px)">
                     <img  class="normalImg square" src="images/profile.webp" alt="profile picture of Ethan Coote" loading="lazy">
@@ -600,12 +550,20 @@ import Footer from "../components/footer.astro";
             <div class="box closest">
                 <h3>Ethan Coote</h3>
                 <h4 class="p thin">Web Developer</h4><br><br>
+                
                 <div class="box text">
                     <p>Hey, my name's Ethan. I'm a Canadian web developer living in Guelph, Ontario.</p>
                     <p>I build simple websites with a strong focus on performance and conversion optimization. I’ve been building websites as a hobby for years, and started my business as a freelancer in 2025. Feel free to reach out if you have any questions, or you’d like a custom quote.</p>
+                    
                     <div class="box closest">
                         <p class="pSmall"><b>Bachelor of Computing</b><br>Major in Computer Science | Minor in Business</p>
                         <p class="pSmall">University of Guelph | 2019 - 2024</p>
+                    </div>
+                    <div class="box acrossTrue">
+                        <img class="icon square" src="images/htmlLogo.webp" alt="html logo">
+                        <img class="icon square" src="images/cssLogo.webp" alt="css logo">
+                        <img class="icon square" src="images/jsLogo.webp" alt="js logo">
+                        <img class="icon square" src="images/astroLogo.webp" alt="astro logo">
                     </div>
                     
                 </div>
@@ -614,6 +572,62 @@ import Footer from "../components/footer.astro";
         </div>
 
     </section>
+
+	<!-- FAQ -->
+	<section class="normalSection closeish">
+		<div class="container noPaddingBot">
+            <div class="box center"><h2 class="pSmall thin tag darkBack">FAQs</h2></div>
+        </div>
+		<div class="container noPaddingTop noPaddingBot">
+            <div class="divider mobileHide"></div>
+			<div class="box center">
+				<h3 class="h2">Frequently Asked Questions</h3>
+			</div>
+            <div class="divider mobileHide"></div>
+		</div>
+		<div class="container lightPaddingTop top mobile8Gap">
+			<div class="box closer">
+                <details name="accordion1">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Do you handle hosting?</p>
+					</summary>
+					<div class="answer">
+						<p class="subtextBlack">Yes. For hosting I charge $20CAD/month for landing pages, and $30CAD/month for standard sites. If you pay annually, you get the first 3 months of hosting free.</p>
+					</div>
+				</details>
+				<details name="accordion1">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">Can I request revisions for my website?</p>
+					</summary>
+					<div class="answer">
+						<p class="subtextBlack">Yes. All projects come with 2 rounds of revisions. You have 48 hours to send your revisions. Additional rounds of revisions are $100CAD each. I limit revision rounds to get your website online as fast as possible.<br><br>In my experience, a long revision phase tends to waste a lot of time, and often results in a weaker final product.</p>
+					</div>
+				</details>
+				
+			</div>
+			<div class="box closer">
+				<details name="accordion2">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">How long does development take?</p>
+					</summary>
+					<div class="answer">
+						<p class="subtextBlack">I guarantee a 14-day delivery. The project starts after you have provided all of your branding and images. The timeline will be extended if there are additional rounds of revisions.</p>
+					</div>
+				</details>
+				<details name="accordion2">
+					<summary class="box acrossTrue apart">
+						<p class="pLarge">What tools do you use to build websites?</p>
+					</summary>
+					<div class="answer">
+						<p class="subtextBlack">Most of my websites are completely custom coded with HTML, CSS and JavaScript. I use the Astro framework for static site generation, and I use Firebase for static hosting.<br><br>I also build websites using Framer. If you would specifically like a Framer website then let me know when you reach out.</p>
+					</div>
+				</details>
+			</div>
+            
+		</div>
+
+        <br>
+	</section>
 
     <!--Guarantees
     <section class="normalSection closeish">
@@ -670,7 +684,8 @@ import Footer from "../components/footer.astro";
         </div>
         <div class="container noPaddingTop">
             <div class="box">
-                <h3>Let's Get in Touch</h3>
+                <h3>Let's Work Together!</h3>
+                <p>I'd love to hear about your project. Tell me about your business, and feel free to ask any questions. I'll get back to you as soon as I can.</p>
                 <form class="box close" action="https://formsubmit.co/013156e829aadb58d778adcecfdb1fbd" method="POST">
                     <div class="box across close">
                         <div class="box closest">
@@ -684,20 +699,25 @@ import Footer from "../components/footer.astro";
                     </div>
                     <div class="box across close">
                         <div class="box closest">
-                            <label for="phone"><p>Phone</p></label>
-                            <input class="inputBox" type="tel" name="phone" id="phone" placeholder="289-555-5555">
+                            <label for="type"><p>Project Type</p></label>
+                            <select name="type" id="type" class="inputBox">
+                                <option style="color: hsla(0, 0%, 0%, .5);">Selection...</option>
+                                <option value="landingPage">Landing Page - $599</option>
+                                <option value="landingPage">5 Page Business Site - $999</option>
+                                <option value="landingPage">Custom - $2999+</option>
+                            </select>
                         </div>
                         <div class="box closest">
-                            <label for="company"><p>Company Name</p></label>
-                            <input class="inputBox" type="text" name="company" id="company" placeholder="moneymakers inc.">
+                            <label for="company"><p>Business Name</p></label>
+                            <input class="inputBox" type="text" name="company" id="company" placeholder="Your Business">
                         </div>
                     </div>
                     <div class="box closest">
-                        <label for="message"><p>Message</p></label>
-                        <textarea class="inputBox textArea" rows="6" cols="64" name="message" id="message" placeholder="What would you like to say?" required></textarea>
+                        <label for="message"><p>Project Details</p></label>
+                        <textarea class="inputBox textArea" rows="6" cols="64" name="message" id="message" placeholder="Any questions or additional details about your project." required></textarea>
                     </div>
                     <!-- <input type="hidden" name="_next" value="localhost:4321/thank-you.html">-->
-                    <button type="submit" name="submit" class="button main fill"><p>Get a Quote</p></button>
+                    <button type="submit" name="submit" class="button main fill"><p>Submit</p></button>
                 </form>
             </div>
             <div class="box close">
