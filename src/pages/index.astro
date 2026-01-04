@@ -35,7 +35,7 @@ import Gtag from "../components/Gtag.astro";
 				src: url('/fonts/roboto-v50-latin-700.woff2') format('woff2');
 			}
     	</style>
-        <Gtag />
+        
 	</head>
 	<body>
 
@@ -45,20 +45,7 @@ import Gtag from "../components/Gtag.astro";
     <main id="home" class="normalSection hero">
         <div class="container close">
             <div class="box hero">
-                <!-- 
-                <div id="heroReviews" class="box acrossTrue closer centerAlign tag dark shrink visCenter centerMobile">
-                    <img class="icon" src="images/googleLogo.webp" alt="checkmark icon">
-                    <div class="box closest">
-                        <div class="box closest acrossTrue">
-                            <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                            <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                            <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                            <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                            <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                        </div>
-                        <p class="pTiny"><b>5</b> of <b>5 Stars</b></p>
-                    </div>
-                </div>-->
+                
                 <div class="box acrossTrue centerMobile">
                     <img class="icon square" src="images/htmlLogo.webp" alt="html logo">
                     <img class="icon square" src="images/cssLogo.webp" alt="css logo">
@@ -92,16 +79,8 @@ import Gtag from "../components/Gtag.astro";
             <div class="box closer center">
                 <picture>
                     <source srcset="images/mobile/mockup.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <img class="normalImg" id="heroImage2" src="images/mockup.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">
+                    <img class="normalImg sixteenByNine" id="heroImage2" src="images/mockup.webp" alt="mockup of a website on different screen sizes" fetchpriority="high">
                 </picture>
-
-                <!-- 
-                <img class="heroImage" id="heroImage3" src="images/woman-laptop.webp" alt="woman working on a laptop">
-                <picture>
-                    <source srcset="images/mobile/laptop.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <img class="heroImage" id="heroImage2" src="images/laptop.webp" alt="two men smiling and looking at a laptop screen" fetchpriority="high">
-                </picture>
-                <img class="heroImage" id="heroImage1" src="images/man-in-shop.webp" alt="older man standing in a shop">-->
                 
             </div>
             <div id="tagsMobile" class="box close centerMobile across">
@@ -139,7 +118,7 @@ import Gtag from "../components/Gtag.astro";
 			
 		</style>
     </main>
-	
+
     <!--PORTFOLIO-->
     <section class="normalSection close" id="portfolio">
         <div class="container noPaddingBot">
@@ -156,7 +135,7 @@ import Gtag from "../components/Gtag.astro";
 
         </div>
         <div class="lightbox">
-            <img id="lightboxImg" src="images/portfolio/apexFull.webp" alt="apex auto homepage image">
+            <img id="lightboxImg" src="images/portfolio/apexFull.webp" alt="homepage image" loading="lazy">
             <div id="lightboxClose">
                 <img class="icon" src="images/close.png" alt="close X">
             </div>
@@ -167,7 +146,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/trueauto.webp" alt="Chalkie AI homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/trueauto.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/trueauto.webp" alt="true auto detailing homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 <div class="box closest">
                     <div class="box acrossTrue apart">
@@ -182,7 +165,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/chalkie.webp" alt="Chalkie AI homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/chalkie.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/chalkie.webp" alt="Chalkie AI homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 <div class="box closest">
                     <div class="box acrossTrue apart">
@@ -197,7 +184,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/nycurls.webp" alt="NY-Curls homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/nycurls.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/nycurls.webp" alt="NY-Curls homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 <div class="box closest">
                     <div class="box acrossTrue apart">
@@ -212,7 +203,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/bim.webp" alt="The BIM Builders homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/bim.webp" media="(min-width: 0px) and (max-width: 480px)"> 
+                        <img class="normalImg outline" src="../images/portfolio/bim.webp" alt="The BIM Builders homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 
                 <div class="box closest">
@@ -228,7 +223,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/kansasvc.webp" alt="The Kansas VC homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/kansasvc.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/kansasvc.webp" alt="The Kansas VC homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 
                 <div class="box closest">
@@ -245,7 +244,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/apex.webp" alt="apex auto homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/apex.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/apex.webp" alt="apex auto homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 
                 <div class="box closest">
@@ -262,7 +265,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/greenway.webp" alt="apex auto homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/greenway.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/greenway.webp" alt="apex auto homepage mockup" loading="lazy">
+                    </picture>  
+                    
                 </div>
                 
                 <div class="box closest">
@@ -278,7 +285,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/elevate.webp" alt="elevate homes homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/elevate.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/elevate.webp" alt="elevate homes homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 
                 <div class="box closest">
@@ -294,7 +305,11 @@ import Gtag from "../components/Gtag.astro";
                     <div class="hoverTextBox">
                         <p class="hoverText pLarge">+<br>Design Preview</p>
                     </div>
-                    <img class="normalImg outline" src="../images/portfolio/arlo.webp" alt="Alro homepage mockup">
+                    <picture>
+                        <source srcset="../images/portfolio/mobile/arlo.webp" media="(min-width: 0px) and (max-width: 480px)">
+                        <img class="normalImg outline" src="../images/portfolio/arlo.webp" alt="Alro homepage mockup" loading="lazy">
+                    </picture>
+                    
                 </div>
                 
                 <div class="box closest">
@@ -316,7 +331,11 @@ import Gtag from "../components/Gtag.astro";
     <section class="normalSection" id="learn">
         <div class="container">
             <div class="box center">
-                <img id="performance" class="normalImg square outline" src="images/performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                <picture>
+                    <source srcset="images/mobile/performance.webp" media="(min-width:0px) and (max-width:480px)">
+                    <img id="performance" class="normalImg square outline" src="images/performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                </picture>
+                
             </div>
             <div class="box">
                 <h3>Fast, Custom Coded Websites</h3>
@@ -331,49 +350,6 @@ import Gtag from "../components/Gtag.astro";
         </div>  
     </section> 
 
-    <!--Mockup 
-    <section id="mockup" class="normalSection">
-        <div class="container">
-            <div class="box">
-                <picture>
-                    <source srcset="images/mobile/mockup.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <img class="normalImg sixteenByNine" src="images/mockup.webp" alt="painter landing page mockup" loading="lazy">
-                </picture>
-            </div>
-            <div class="box">
-                <h2 class="h3">Fast, Custom Coded Sites</h2>
-                <div class="box text">
-                    <p>Website builders and frameworks can make cool websites, but they come at the cost of performance.</p>
-                    <p>Fancy animations and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have clarity, and really fast page speeds.</p>
-                    <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
-                </div>
-                
-            </div>
-        </div>  
-    </section>-->
-
-    <!--Custom Code
-    <section class="normalSection">
-        <div class="container ">
-            <div class="box">
-                <picture>
-                    <source srcset="images/mobile/code.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <source srcset="images/code.webp" media="(min-width: 481px)">
-                    <img class="normalImg fourByThree" src="images/code.webp" alt="VS Code folder making a website" loading="lazy">
-                </picture>
-            </div>
-            <div class="box">
-                <h3>Custom Coded Static Sites</h3>
-                <div class="box text">
-                    <p>Website builders and frameworks can make cool websites, but they come at a cost. That cost is performance.</p>
-                    <p>Fancy animations, and high-end tech stacks won’t get you more clients (unfortunately). High converting websites have 3 things: simplicity, clarity, and really fast page speeds.</p>
-                    <p>That’s why I’ve switched to building static sites with custom code. They’re faster, easier to manage, and fully future-proof.</p>
-                </div>
-                
-            </div>
-        </div>  
-    </section>-->
-
     <!--SEO-->
     <section class="normalSection">
         <div class="container mobileFlip">
@@ -381,8 +357,7 @@ import Gtag from "../components/Gtag.astro";
             <div class="box">
                 <h3>Search Engine Optimization</h3>
                 <div class="box text">
-                    <p>There’s a lot of misleading information about <b>Search Engine Optimization</b>. I focus on the things that actually matter.</p>
-                    <p>Your website shoudl be the foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. That's why all my website packages come with a full on-page and technical SEO setup.</p>
+                    <p>Your website should be the foundation for you to build your business on. Without a strong foundation, all other SEO techniques will fail. That's why all my website packages come with a full on-page and technical SEO setup.</p>
                     <p>You need your website to be the bedrock of your SEO strategies. Give yourself the opportunity to scale without wondering if your website is holding you back.</p>
                 </div>
                 
@@ -630,39 +605,6 @@ import Gtag from "../components/Gtag.astro";
         <br>
 	</section>
 
-    <!--Guarantees
-    <section class="normalSection closeish">
-        <div class="gradientBG"></div>
-        <div class="container noPaddingBot">
-            <div class="box center"><h3 class="pSmall thin tag">Guarantees</h3></div>
-        </div>
-        <div class="container down noPaddingTop">            
-            <div class="box across center top close">
-                <div class="box fill close center card stretch outline">
-                    <img class="icon" src="images/dollar.svg" alt="dollar icon" loading="lazy" width="32" height="32">
-                    <h4>Money Back Guarantee</h4>
-                    <p>If you don’t like your website you get a full refund. That’s how confident I am that you’ll love it.</p>
-                    <p>Big design agencies are risky and expensive. I make websites that normal businesses can afford, and it’s completely risk free.</p>
-                    <p><i>(Refunds must be requested prior to handoff)</i></p>
-                </div>
-                <div class="box fill close center card stretch outline">
-                    <img class="icon" src="images/bug.svg" alt="bug icon" loading="lazy" width="32" height="32">
-                    <h4>Bug Fix Guarantee</h4>
-                    <p>Most of the time the websites completely bug free, but sometimes mistakes happen. If you find any typos or bugs in your website within the first 6 months, I'll fix it for free.</p>
-                    <p>If you decide to use my hosting plan, you also get a lifetime bug fix guarantee.</p>
-                </div>
-                <div class="box fill close center card stretch outline">
-                    <img class="icon" src="images/lightning.svg" alt="lightning icon" loading="lazy" width="32" height="32">
-                    <h4>14-Day Turnaround Guarantee</h4>
-                    <p>Your business could be online this week. Big web design agencies will spend months building your website, going back and forth with round after round of revisions.</p>
-                    <p>By streamlining the development process, and including just 1 round of revisions, I can guarantee your website will be online within 14-days of your order.</p>
-                </div>
-                
-                
-            </div>
-        </div>
-    </section>-->
-
     <!--CTA-->
     <section class="normalSection">
         <div class="gradientBG"></div>
@@ -679,7 +621,7 @@ import Gtag from "../components/Gtag.astro";
     </section>
 
     <!--CONTACT-->
-    <section id="contact" class="normalSection close" >
+    <section id="contact" class="normalSection close">
         <div class="container lightPaddingBot">
             <div class="box center"><h2 class="pSmall thin tag darkBack ">Contact</h2></div>
         </div>
@@ -791,5 +733,6 @@ import Gtag from "../components/Gtag.astro";
 	<Footer />
 
     <script src="../scripts/lightbox.js"></script>
+    <Gtag />
 	</body>
 </html>

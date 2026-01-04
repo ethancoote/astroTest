@@ -527,6 +527,9 @@ html {
 .primaryBack {
     background-color: var(--primary-color);
 }
+.grayBack {
+    background-color: var(--off-gray);
+}
 .primary {
     color: var(--primary-color);
 }
@@ -608,6 +611,7 @@ html {
     height:auto;
     border-radius: var(--border-radius);
     object-fit: cover;
+    display: block;
 }
 
 .contrast {
