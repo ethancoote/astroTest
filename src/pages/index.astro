@@ -36,6 +36,12 @@ import Gtag from "../components/Gtag.astro";
 			}
     	</style>
         
+        <link rel="preload" fetchpriority="high" href="/images/mobile/mockup.webp" as="image" media="(max-width: 480px)">
+        <link rel="preload" fetchpriority="high" href="/images/mockup.webp" as="image" media="(min-width: 481px)">
+        <link rel="preload" href="/images/cssLogo.webp" as="image">
+        <link rel="preload" href="/images/htmlLogo.webp" as="image">
+        <link rel="preload" href="/images/jsLogo.webp" as="image">
+        <link rel="preload" href="/images/astroLogo.webp" as="image">
 	</head>
 	<body>
 
@@ -67,11 +73,11 @@ import Gtag from "../components/Gtag.astro";
                 </div>
                 <div id="tagsDesktop" class="box close centerMobile across">
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                         <p>Bug-Fix Guarantee</p>
                     </div>
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                         <p>14-Day Delivery</p>
                     </div>
                 </div>
@@ -85,11 +91,11 @@ import Gtag from "../components/Gtag.astro";
             </div>
             <div id="tagsMobile" class="box close centerMobile across">
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                         <p>Bug-Fix Guarantee</p>
                     </div>
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                         <p>14-Day Delivery</p>
                     </div>
                 </div>
@@ -135,6 +141,7 @@ import Gtag from "../components/Gtag.astro";
 
         </div>
         <div class="lightbox">
+            
             <img id="lightboxImg" src="images/portfolio/apexFull.webp" alt="homepage image" loading="lazy">
             <div id="lightboxClose">
                 <img class="icon" src="images/close.png" alt="close X">
@@ -148,7 +155,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/trueauto.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/trueauto.webp" alt="true auto detailing homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/trueauto.webp" alt="true auto detailing homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -167,7 +174,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/chalkie.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/chalkie.webp" alt="Chalkie AI homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/chalkie.webp" alt="Chalkie AI homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -186,7 +193,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/nycurls.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/nycurls.webp" alt="NY-Curls homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/nycurls.webp" alt="NY-Curls homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -205,7 +212,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/bim.webp" media="(min-width: 0px) and (max-width: 480px)"> 
-                        <img class="normalImg outline" src="../images/portfolio/bim.webp" alt="The BIM Builders homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/bim.webp" alt="The BIM Builders homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -225,7 +232,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/kansasvc.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/kansasvc.webp" alt="The Kansas VC homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/kansasvc.webp" alt="The Kansas VC homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -246,7 +253,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/apex.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/apex.webp" alt="apex auto homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/apex.webp" alt="apex auto homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -267,7 +274,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/greenway.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/greenway.webp" alt="apex auto homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/greenway.webp" alt="apex auto homepage mockup" loading="lazy" width="400" height="300">
                     </picture>  
                     
                 </div>
@@ -287,7 +294,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/elevate.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/elevate.webp" alt="elevate homes homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/elevate.webp" alt="elevate homes homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -307,7 +314,7 @@ import Gtag from "../components/Gtag.astro";
                     </div>
                     <picture>
                         <source srcset="../images/portfolio/mobile/arlo.webp" media="(min-width: 0px) and (max-width: 480px)">
-                        <img class="normalImg outline" src="../images/portfolio/arlo.webp" alt="Alro homepage mockup" loading="lazy">
+                        <img class="normalImg outline fourByThree" src="../images/portfolio/arlo.webp" alt="Alro homepage mockup" loading="lazy" width="400" height="300">
                     </picture>
                     
                 </div>
@@ -329,11 +336,11 @@ import Gtag from "../components/Gtag.astro";
 
     <!--Performance-->
     <section class="normalSection" id="learn">
-        <div class="container">
-            <div class="box center">
+        <div class="container" >
+            <div class="box">
                 <picture>
-                    <source srcset="images/mobile/performance.webp" media="(min-width:0px) and (max-width:480px)">
-                    <img id="performance" class="normalImg square outline" src="images/performance.webp" alt="pagespeed insights high performing webpage" loading="lazy">
+                    <source srcset="images/mobile/performance.webp" media="(max-width:480px)">
+                    <img id="performance" class="normalImg square" src="images/performance.webp" alt="pagespeed insights high performing webpage" loading="lazy" >
                 </picture>
                 
             </div>
@@ -388,31 +395,31 @@ import Gtag from "../components/Gtag.astro";
                     <div class="box close">
                         <p><i>What's Included:</i></p>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                             <p>Conversion Focused Landing Page</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Fully Responsive</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                             <p>Technical SEO Setup</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                             <p>Copywriting</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                             <p>Branded With Your Logo & Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
                             <p>Linked to Your Social Media</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Custom Contact Form</p>
                         </div>
                         
@@ -431,31 +438,31 @@ import Gtag from "../components/Gtag.astro";
                     <div class="box close">
                         <p><i>What's Included:</i></p>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>5 Page Custom Website</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>On Page & Technical SEO Setup</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Fully Responsive</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Full Site Copywriting</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Branded With Your Logo & Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Linked to Your Social Media</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Custom Contact Form</p>
                         </div>
                     </div><br>
@@ -474,31 +481,31 @@ import Gtag from "../components/Gtag.astro";
                     <div class="box close">
                         <p><i>What's Included:</i></p>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall " src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Full Custom Website</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Fully Responsive</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>On Page & Technical SEO Setup</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Full Site Copywriting</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Branded With Your Logo & Assets</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Linked to Your Social Media</p>
                         </div>
                         <div class="box acrossTrue close textLeft">
-                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Custom Contact Form</p>
                         </div>
                     </div><br>
@@ -682,11 +689,11 @@ import Gtag from "../components/Gtag.astro";
                     </div>-->
                     <div class="box close centerMobile shrink endAlign">
                         <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
-                            <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>14-Day Delivery</p>
                         </div>
                         <div class="box acrossTrue closer centerAlign tag darkBack shrink visCenter">
-                            <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon">
+                            <img width="32" height="32" class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
                             <p>Bug Fix Guarantee</p>
                         </div>
                         
@@ -699,11 +706,11 @@ import Gtag from "../components/Gtag.astro";
                         <img class="icon" src="images/googleLogo.webp" alt="Google Logo">
                         <div class="box closest shrink">
                             <div class="box closest acrossTrue end">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
                             </div>
                             <p><i>- Pete Sanderson</i></p>
                         </div>
@@ -716,11 +723,11 @@ import Gtag from "../components/Gtag.astro";
                         <img class="icon" src="images/googleLogo.webp" alt="Google Logo">
                         <div class="box closest shrink">
                             <div class="box closest acrossTrue end">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
-                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
+                                <img class="iconTiny" src="images/star.svg" alt="star icon" width="32" height="32" loading="lazy">
                             </div>
                             <p><i>- Cassandra</i></p>
                         </div>
