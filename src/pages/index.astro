@@ -6,6 +6,7 @@ import '../styles/portfolio.css';
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import Gtag from "../components/Gtag.astro";
+import Heatmap from "../components/Heatmap.astro";
 ---
 
 <html lang="en">
@@ -42,6 +43,8 @@ import Gtag from "../components/Gtag.astro";
         <link rel="preload" href="/images/htmlLogo.webp" as="image">
         <link rel="preload" href="/images/jsLogo.webp" as="image">
         <link rel="preload" href="/images/astroLogo.webp" as="image">
+        <Gtag />
+        <Heatmap />
 	</head>
 	<body>
 
@@ -73,11 +76,11 @@ import Gtag from "../components/Gtag.astro";
                 </div>
                 <div id="tagsDesktop" class="box close centerMobile across">
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                         <p>Bug-Fix Guarantee</p>
                     </div>
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32" loading="lazy">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" width="32" height="32">
                         <p>14-Day Delivery</p>
                     </div>
                 </div>
@@ -85,17 +88,17 @@ import Gtag from "../components/Gtag.astro";
             <div class="box closer center">
                 <picture>
                     <source srcset="images/mobile/mockup.webp" media="(min-width: 0px) and (max-width: 480px)">
-                    <img class="normalImg sixteenByNine" id="heroImage2" src="images/mockup.webp" alt="mockup of a website on different screen sizes" fetchpriority="high">
+                    <img class="normalImg sixteenByNine" id="heroImage2" src="images/mockup.webp" alt="mockup of a website on different screen sizes" fetchpriority="high" loading="eager">
                 </picture>
                 
             </div>
             <div id="tagsMobile" class="box close centerMobile across">
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon">
                         <p>Bug-Fix Guarantee</p>
                     </div>
                     <div class="box acrossTrue closer centerAlign tag dark shrink visCenter">
-                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" loading="lazy">
+                        <img class="iconSmall" src="images/check.svg" alt="checkmark icon" >
                         <p>14-Day Delivery</p>
                     </div>
                 </div>
@@ -378,7 +381,7 @@ import Gtag from "../components/Gtag.astro";
         </div>
     </section>
 
-    <!--Price-->
+    <!--Price
     <section id="pricing" class="normalSection closeish">
         <div class="gradientBG"></div>
         <div class="container noPaddingBot">
@@ -515,7 +518,7 @@ import Gtag from "../components/Gtag.astro";
                 
             </div> 
         </div>
-    </section>
+    </section>-->
 
     <!--ABOUT-->
     <section id="about" class="normalSection closeish">
@@ -652,9 +655,9 @@ import Gtag from "../components/Gtag.astro";
                             <label for="type"><p>Project Type</p></label>
                             <select name="type" id="type" class="inputBox">
                                 <option style="color: hsla(0, 0%, 0%, .5);">Selection...</option>
-                                <option value="Landing Page">Landing Page - $599</option>
-                                <option value="Business Site">5 Page Business Site - $999</option>
-                                <option value="Custom">Custom - $2999+</option>
+                                <option value="Landing Page">Landing Page</option>
+                                <option value="Business Site">Small Business Website</option>
+                                <option value="Custom">Custom</option>
                             </select>
                         </div>
                         <div class="box closest">
@@ -740,6 +743,6 @@ import Gtag from "../components/Gtag.astro";
 	<Footer />
 
     <script src="../scripts/lightbox.js"></script>
-    <Gtag />
+    
 	</body>
 </html>
